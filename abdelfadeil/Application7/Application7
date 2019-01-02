@@ -1,0 +1,8 @@
+Ecrire une application tableau qui pourrait afficher la trace ci dessous :
+Le tableau initial : (3, -8, 14, 4)
+longueur du tableau = 4
+somme du tableau = 13
+indice du max du tableau = 2
+Après ajout de 20 :
+le tableau initial est : (3, -8, 14, 4)
+et le résultat est : (3, -8, 14, 4, 20)
