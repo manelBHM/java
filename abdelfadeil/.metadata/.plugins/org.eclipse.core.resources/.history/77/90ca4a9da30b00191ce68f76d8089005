@@ -1,0 +1,31 @@
+package com.segment;
+
+public class segmentDeDroite {
+	
+	int point;
+	int segmentA;
+	int segmentB;
+	int longueur;
+
+	public int calculerLongueur() {
+		longueur= segmentA - segmentB;
+		return longueur;
+	}
+	
+	public void pointAppartien() {
+		if(segmentA < segmentB) {
+			if((segmentA <= point) && (point <= segmentB)) {
+				
+			}
+		}
+	}
+	
+	public void verifierPoint() {
+		System.out.println("Pour la commmande :");
+		System.out.println("TestSegment "+ segmentA + " "+ segmentB +" "+ point);
+		longueur = calculerLongueur();
+		System.out.println("Longueur du segment[" + segmentA +", "+ segmentB + "]: "+ longueur);
+		System.out.println();
+		
+	}
+}

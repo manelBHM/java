@@ -1,0 +1,26 @@
+package app3;
+
+import java.util.Scanner;
+
+public class inverserString {
+	
+	public void inverser() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ecrivez un mot ");
+		String mot = sc.nextLine();
+		StringBuffer sb = new StringBuffer(mot);
+		System.out.println(" L'inverse de "+ mot+" est "+ sb.reverse());
+
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Exemple 1");
+		
+		
+		System.out.println("Exemple 2");
+		
+		
+	}
+
+}

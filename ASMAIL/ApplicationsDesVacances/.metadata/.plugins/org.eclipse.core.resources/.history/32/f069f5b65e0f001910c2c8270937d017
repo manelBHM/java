@@ -1,0 +1,32 @@
+
+public class Personne {
+    private String nom;
+    private String ami;
+    
+    public Personne(String nom) {
+    	this.nom=nom;
+    }
+    public Personne(String nom, String ami1) {
+    	this.nom=nom;
+    	this.ami=ami1;
+    }
+	public String getNom() {
+		return nom;
+	}
+	public String getAmi() {
+		return ami;
+	}
+
+	public String afficher() {
+
+		if(nom.equals(ami)) {
+			return nom + " n'a pas d'ami";
+		}else {
+			return nom + " a pour ami " +nom;
+		}
+		
+	}
+
+	
+   
+}

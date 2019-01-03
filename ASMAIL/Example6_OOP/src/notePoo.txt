@@ -70,6 +70,38 @@ la classe parente puis d'hériter de cette classe
 
 L'héritage est toujours additif; il est impossible d'hériter d'une classe
 
+L'héritage
+On peut faire appel au constrcteur de la classe mère en utilisant le mont-clé super() avec les paramètre requis. super remplace le nom
+du constrcteur de la classe mère.
+L'instrction super() doit être obligatoirement la première instrction des constrcteurs de la classes fille. tout constrcteur d'une classe fille
+appelle forcément l'un des constrcteur de la classe mère : si cest appel n'est pas explicite, l'appel du constrcteur par défaut
+(sans paramètre) est effectué implicitement. ainsi un objet dérivé est
+toujours constrcteur sur la base d'un object de sa classe mère
+
+Les sous-classes n'ont pas accès aux nembres private de leur classe mère
+
+
+L'encapsulation
+l'idée d'encansplation est apparue dès de début de la poo. le but est protéger l'objet 
+en ne montrant que les méthodes de manipulation.
+
+On cache les propriété et les méthodes internes au fonctionnement de l'object
+
+*private Visibilté restreinte à la classe
+*public visisiblité de tout
+*protected visisblité restreinte à la classe et aux descendants
+
+
+Le Polymorphisme
+
+cette notion intervient les méthodes (et nom sur les proprétés).
+une methode possède une signateure: un nom, un retour, des paramètres, et une visiblité
+
+
+par surcharge (overload)
+par redéfinition (overrid)
+par interface
+
 
 
 

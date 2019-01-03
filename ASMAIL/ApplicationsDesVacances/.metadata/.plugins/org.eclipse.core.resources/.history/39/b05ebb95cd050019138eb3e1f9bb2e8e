@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Palindrome {
+	
+	
+	public static void main(String[] args) {
+		Scanner inputString = new Scanner(System.in);
+		System.out.println("Enter a string");
+		String str=inputString.next();
+		inputString.close();
+		String recString = "";
+		
+		char[] ch=str.toCharArray();
+		
+		for(int i = ch.length-1; i >= 0; i--) {
+			recString=recString+ch[i];
+		}
+		System.out.println(recString);
+		
+		
+	}
+
+}
