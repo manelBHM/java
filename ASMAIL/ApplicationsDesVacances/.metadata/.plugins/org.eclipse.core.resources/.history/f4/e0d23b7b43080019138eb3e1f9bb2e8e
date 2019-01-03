@@ -1,0 +1,27 @@
+package com.projet2.inter;
+
+public class Complexe implements IOperation, IAffichage {
+	private double im = 3;
+	private double re = 4;
+	private double sumAdd, sumSou;
+
+	@Override
+	public void plus(Object obj) {
+		sumAdd = im + re;
+		
+	}
+
+	@Override
+	public void moins(Object obj) {
+		 sumSou = im - re;
+		
+	}
+
+	@Override
+	public String affich() {
+		String res = sumAdd + " " + sumSou;
+		System.out.println(res);
+		return res;
+	}
+
+}
