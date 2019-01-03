@@ -4,16 +4,19 @@ public class TestPersonne {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Personne p = new Personne("Suzane");
-		String pSeule = p.afficher();
+		Personne personneSeule;
+		Personne  ami1;
+		Personne ami2 = null;
+
+		personneSeule = new Personne("Tom");
+		ami1 = new Personne("Adam");
+		ami2 = new Personne("Hugo");
+         ami1.setAmi(ami2);
+         ami2.setAmi(ami1);
 		
-		Personne p1 = new Personne("Marc");
-		String ami1 = p1.afficher();
-		
-		
-		System.out.println(pSeule);
-		System.out.println(ami1);
-		//System.out.println(ami2);*/
+		System.out.println(personneSeule);
+		System.out.println(ami1); 
+        System.out.println(ami2);
 
 	}
 
