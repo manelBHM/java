@@ -1,0 +1,21 @@
+package com.projet.inter;
+
+import java.util.Date;
+
+public class Personne implements Ipersonne {
+	static int id = 0;
+	String nom, prenom;
+	Date dateNaissance;
+    double salaire;
+    Profil profil;
+    
+    public Personne(String nom, String prenom, Date dateNaissance, double salaire, Profil profil) {
+		id++;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.dateNaissance = dateNaissance;
+		this.salaire =  salaire;
+		this.profil = profil;
+	}
+    
+}
