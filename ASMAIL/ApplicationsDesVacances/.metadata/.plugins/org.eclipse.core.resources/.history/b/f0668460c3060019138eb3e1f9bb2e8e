@@ -1,0 +1,29 @@
+package com.projet.inter;
+
+import java.sql.Date;
+
+public class Personne implements Ipersonne {
+	private int id;
+	private String nom;
+	private Date dateNais;
+	private Double salaire;
+	private Profil profil = new Profil();
+	
+	public Personne(int id, String nom, Date dateNais, Double salaire, Profil profil) {
+		super();
+		this.id = id;
+		this.nom = nom;
+		this.dateNais = dateNais;
+		this.salaire = salaire;
+		this.profil = profil;
+	}
+
+
+
+	@Override
+	public void afficher() {
+	//	String strValue = "Je suis "
+		
+	}
+
+}

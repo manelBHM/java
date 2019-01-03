@@ -2,9 +2,14 @@ import java.util.Scanner;
 
 public class compares {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		
+		//-------------example 1 de calcul ----------//
 		
 	/*int a = 5, b = 2;
 	
@@ -17,18 +22,38 @@ public class compares {
 	}
 		*/
 		
-//	int a = 5;
-//	
-//	if(a > 5) {
-//		System.out.println("a est positif");
-//	}
-//	else if(a == 5) {
-//		System.out.println("a est nul");
-//	}
-//		
-//	else  {
-//		System.out.println("a est négatif");
-//	}
+		//-------------example 1 de calcul ----------//
+		
+		
+		
+		
+		
+		
+		//-------------example 2 de calcul ----------//
+		
+	/*int a = 5;
+	
+	if(a > 5) {
+		System.out.println("a est positif");
+	}
+	else if(a == 5) {
+		System.out.println("a est nul");
+	}
+		
+	else  {
+		System.out.println("a est négatif");
+	}*/
+		
+		//-------------example 2 de calcul ----------//
+		
+		
+		
+		
+		
+		
+		
+		
+		//-------------example 3 de calcul ----------//
 		
 	/*	int a = 55;
 		
@@ -38,6 +63,18 @@ public class compares {
 		else {
 			System.out.println("a il est pas entre 50 et 100");
 		}*/
+		
+		//-------------example 3 de calcul ----------//
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		                  //----scanner---//
 		
 		Scanner scan1 = new Scanner(System.in);
 		Scanner scan2 = new Scanner(System.in);
@@ -58,7 +95,7 @@ public class compares {
 		else {
 			System.out.println("ils sont  egaux " );
 		}
-		
+		                     //----scanner---//
 	}
 
 }

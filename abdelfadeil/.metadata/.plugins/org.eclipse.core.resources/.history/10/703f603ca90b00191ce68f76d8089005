@@ -1,0 +1,16 @@
+package com.segment;
+
+public class testSegment {
+
+	public static void main(String[] args) {
+		
+		segmentDeDroite seg1 = new segmentDeDroite(-35, 44, 8);
+        seg1.verifierPoint();
+}
+	
+	
+	
+	
+	
+	
+}

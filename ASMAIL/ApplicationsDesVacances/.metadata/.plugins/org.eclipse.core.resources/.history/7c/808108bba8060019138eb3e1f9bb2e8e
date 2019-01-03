@@ -1,0 +1,19 @@
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		B b = new B();
+		C c = new C();
+		
+		
+		b.decrire();
+		c.decrire();
+		c.decrire();
+		b.decrire();
+		c.decrire();
+
+	}
+
+}

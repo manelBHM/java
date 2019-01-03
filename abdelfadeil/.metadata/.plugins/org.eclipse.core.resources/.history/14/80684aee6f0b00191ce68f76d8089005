@@ -1,0 +1,10 @@
+package etudiant;
+
+public class Etudiant {
+   
+	private String nom;
+	
+	public Etudiant() {
+		// TODO Auto-generated constructor stub
+	}
+}

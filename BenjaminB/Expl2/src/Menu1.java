@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Menu1 {
 	public static void main(String[] args) {
+		
 		Scanner scan1 = new Scanner(System.in);
 		System.out.println("Bonjour et bienvenue au Georges V, au menu de ce soir nous avons :");
 		System.out.println("Le Poulet 9 999.99€ ( que nous déconseillons aux policiers");

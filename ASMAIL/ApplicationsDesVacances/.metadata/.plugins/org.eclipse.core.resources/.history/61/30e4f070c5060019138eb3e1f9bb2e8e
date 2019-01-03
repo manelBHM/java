@@ -1,0 +1,26 @@
+package com.projet.inter;
+
+import java.sql.Date;
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		  Profil profile[] = new Profil[2];
+		  profile[0] = new Profil("EMP", "Employé");
+		  profile[1] = new Profil("DG", "Directeur Général");
+		    
+		  Personne personnes[] = new Personne[6];
+
+		  personnes[0] = new Personne(1, "Drmas issam", new Date(""), 1000.0, profile[1]);
+
+				  
+				  for(Personne pers : personnes) {
+					  pers.afficher();
+				  }
+
+
+	}
+
+}

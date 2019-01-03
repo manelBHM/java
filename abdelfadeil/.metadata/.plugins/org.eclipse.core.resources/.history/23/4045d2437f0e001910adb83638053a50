@@ -1,0 +1,40 @@
+package com.projet.inter;
+
+import java.util.Date;
+
+public class Personne implements Ipersonne {
+	static int id = 0;
+	String nom, prenom;
+	Date dateNaissance;
+    double salaire;
+    Profil profil;
+    
+    public Personne(String nom, String prenom, Date dateNaissance, double salaire, Profil profil) {
+		id++;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.dateNaissance = dateNaissance;
+		this.salaire =  salaire;
+		this.profil = profil;
+	}
+
+	@Override
+	public String affiche() {
+		
+		return "Je suis le "+profil.libelle+" "+nom+" "+ prenom+ " "+" né le "+ dateNaissance +" , mon salaire mensuel est "+ salaire + " Euro";
+	}
+
+	@Override
+	public double calculerSalaire() {
+if(profil.libelle.equals("DG")) {
+			
+			salaire = salaire + (salaire*0.20);
+			
+		}else if(profil.libelle.equals("EM")) {
+			this.salaire =salaire + (salaire*0.10);	
+		}
+		return salaire;
+		
+	}
+    
+}
