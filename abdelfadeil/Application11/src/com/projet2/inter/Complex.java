@@ -15,15 +15,15 @@ public  class Complex implements IOperation, IAffichage{
 	@Override
 	public String affiche() {
 		
-		return null;
+		return " Résultats de numéro complex  ";
 	}
 
-	public Complex plus(Complex c1, Complex c2) {
-		return new Complex(c1.re+c2.re, c1.im+c2.im);
+	public Complex plus(Complex c1) {
+		return new Complex(c1.re+this.re, c1.im+this.im);
 	}
 	
-	public Complex moins(Complex c1, Complex c2) {
-		return new Complex(c1.re-c2.re, c1.im-c2.im);
+	public Complex moins(Complex c1) {
+		return new Complex(c1.re-this.re, c1.im-this.im);
 	}
 
 
