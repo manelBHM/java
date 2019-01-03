@@ -15,7 +15,7 @@ public  class Complex implements IOperation, IAffichage{
 	@Override
 	public String affiche() {
 		
-		return " Résultats de numéro complex  ";
+		return " Résultats de numéro complex  "+ this.re +"  "+ this.im;
 	}
 
 	public Complex plus(Complex c1) {
