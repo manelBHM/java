@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class matrice {
+    int nb;
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Donnez la dimension de la matrice: ");
+		nb = sc.nextInt();
+	}
+}

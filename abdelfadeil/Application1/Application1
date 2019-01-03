@@ -1,0 +1,14 @@
+Vous allez compléter le code de cette classe en lui ajoutant :
+package etudiant; un attribut privé de type String nommé nom ;
+public class Etudiant { un constructeur publique qui a un paramètre de type String servant à initiliser le nom de l'étudiant ;
+} une méthode publique sans paramètre et qui ne renvoie rien, nommée travailler, qui écrit à l'écran, si le nom de l'étudiant a pour
+nom toto :
+toto se met au travail !
+Pour cela, il faut utiliser l'instruction : System.out.println(this.nom + " se met au travail !");
+une méthode publique sans paramètre et qui ne renvoie rien, nommée seReposer, qui écrit à l'écran, si le nom de l'étudiant a pour
+nom toto :
+toto se repose
+Vous allez ensuite créer parallèlement à la classe Etudiant une classe TestEtudiant (aussi dans le package etudiant) contenant
+une méthode main qui :
+crée 2 étudiants
+Afficher le nom de l’etudiant travaillant et le nom de l’étudiant au repos.. ;

@@ -1,0 +1,15 @@
+
+public class EssaiAmi {
+
+	public static void main(String[] args) {
+		Personne personneSeule;
+		Personne  ami1;
+		Personne ami2;
+
+		personneSeule = new Personne("Tom");
+		System.out.println(personneSeule);
+		System.out.println(ami1); 
+		System.out.println(ami2);
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.segment;
+
+public class segmentDeDroite {
+	
+	int point;
+	int segmentA;
+	int segmentB;
+
+	public void caculerSegment() {
+		
+		
+
+	}
+}
