@@ -1,3 +1,4 @@
+package src.exemple5;
 public class WordCount {
 
     public static void main(String[] args) {

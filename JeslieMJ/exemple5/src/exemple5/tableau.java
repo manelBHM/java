@@ -1,5 +1,7 @@
 package exemple5;
 
+import java.util.*;
+
 public class tableau {
 
 	public static void main(String[] args) {
@@ -9,15 +11,14 @@ public class tableau {
 
 
 		
-			int tableauEntier[] = {0,1,2,3,4,5};
+		
 
-			char tableauCaractere[] = {'a','e','i','o','u','y'};
+			String tableauCaractere[] = {"Raid","Yaser","Benjamin","Nayer","Marie","Mahfuz","Arthur","Nabil","Sami","Asmail","Fadeil","Tony","Nahla","Leila","Coumba", "Jeslie","Kevin","Samba"};
 
-			for( int i = 0; i<tableauCaractere.length; i++)
+		
+			int var= new Random().nextInt(tableauCaractere.length);		{
 
-			{
-
-			System.out.println("A l'emplacement " + i + " du tableau nous avons = " +  tableauCaractere[i]);
+			System.out.println(tableauCaractere[var]);
 			}
 	}
 }
