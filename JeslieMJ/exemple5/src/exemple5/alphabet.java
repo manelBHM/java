@@ -1,4 +1,5 @@
-package exemple5;
+package src.exemple5;
+
 import java.util.Scanner;
 public class alphabet {
 

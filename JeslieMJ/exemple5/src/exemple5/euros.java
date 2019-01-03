@@ -1,4 +1,5 @@
-package exemple5;
+package src.exemple5;
+
 
 public class euros {
 

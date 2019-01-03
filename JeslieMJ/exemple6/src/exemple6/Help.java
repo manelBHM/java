@@ -71,8 +71,9 @@ public class Help {
 			
 			default:
 				System.out.println("Je ne sais compter que de 1 à 5 ! Peux- tu reformuler ta demande ?");
-		}
 		
+		
+		}
 	}
-	
 }
+
