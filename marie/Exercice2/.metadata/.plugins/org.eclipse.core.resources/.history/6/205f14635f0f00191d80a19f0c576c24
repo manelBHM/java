@@ -1,0 +1,18 @@
+package app2;
+
+public class Segment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		testSegment();
+	}
+		public static void testSegment() {
+			int[] tab = {-35, 44};
+			for(int i=0; i<tab.length; i++) {
+				
+			}
+			System.out.println("La longueur du segment [-35, 44] = ");
+		}
+	}
+
+
