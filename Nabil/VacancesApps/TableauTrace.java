@@ -41,10 +41,11 @@ public class TableauTrace {
 		System.out.println("Le tableau initial  est : " + Arrays.toString(tableau));
 	
 		int []tab2 = new int[tableau.length+1];
-	
-				//tableau = tab2;
+			  tab2[tab2.length-1]=20;
+
+
 				for (int i=0;i <tab2.length-1; i++) {
-					tab2[4]=20;
+
 					tab2[i] = tableau[i];
 				}
 		
