@@ -1,0 +1,9 @@
+package com.projet2.inter;
+
+public interface IOperation {
+	
+	public void plus(Object obj);
+	public void moins(Object obj);
+	
+
+}

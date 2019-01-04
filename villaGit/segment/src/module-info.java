@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author simplonco
+ *
+ */
+module segment {
+}

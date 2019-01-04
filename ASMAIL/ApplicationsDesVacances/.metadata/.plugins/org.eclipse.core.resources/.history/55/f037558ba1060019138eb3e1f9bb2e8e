@@ -1,0 +1,22 @@
+
+public class TestPersonne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Personne p = new Personne("Marc");
+		String pSeule = p.getNom();
+		String ami1 = p.getNom();
+		String ami2 = p.getNom();
+		
+		
+		Personne p1 = new Personne("Suzane", ami1 );
+		
+		
+		System.out.println(pSeule);
+		System.out.println(ami1);
+		//System.out.println(ami2);*/
+
+	}
+
+}

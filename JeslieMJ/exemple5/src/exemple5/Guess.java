@@ -1,8 +1,9 @@
-package exemple5;
+package src.exemple5;
+
 
 import java.io.IOException;
 import java.util.Scanner;
-
+import java.util.scanner
 public class Guess {
 
 	public static void main(String[] args) {

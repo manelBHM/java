@@ -1,3 +1,6 @@
+/*Exercices sur les valeurs*/
+
+
 package exemple3;
  /*Exemple et applications exercice if else*/
 import java.util.Scanner;
@@ -17,11 +20,11 @@ public class exercice1 {
 		
 		int a,b;
 		
-		System.out.println("Entrez valeur de a :");
+		System.out.println("Entrez la valeur de a :");
 		a = clavier.nextInt();
 		
 		
-		System.out.println("Entrez valeur de b :");
+		System.out.println("Entrez la valeur de b :");
 		b = clavier.nextInt();
 		
 		
@@ -39,18 +42,18 @@ public class exercice1 {
 	*/
 	/*
 	int c ;
-	System.out.println("entrez valeur de c ");
+	System.out.println("entrez la valeur de c ");
 	c = clavier.nextInt();
 	 
 	if (c==0) {
-		System.out.println("c est nul");
+		System.out.println("c'est nul");
 	}
 	 else if (c>0) {
 		 
-		 System.out.println("c est positif ");
+		 System.out.println("c'est positif ");
 	}
 	 else 
-		 System.out.println("c est negatif ");
+		 System.out.println("c'est negatif ");
 	
 */
 int d ;
@@ -58,8 +61,8 @@ int d ;
 
    d = clavier.nextInt();
    
-   if(d>50 && d<100)
-	   System.out.println("d est bien dans l intervalle ");
+   if (d>50 && d<100)
+	   System.out.println("c'est dans l'intervalle ");
    else 
 	   System.out.println("nous ne sommes pas dans l'intervalle");
 	}
