@@ -24,7 +24,7 @@ public class Date implements Convertible{
 		// TODO Auto-generated method stub
 
 		Date x = new Date(13, 12, 2018);
-	System.out.println(x.toInt());
+	    System.out.println(x.toInt());
 	}
 
 }

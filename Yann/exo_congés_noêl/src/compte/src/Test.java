@@ -15,26 +15,33 @@ public class Test {
 		Compte c3 = new Compte(nom, 0);
 		
 		
-		System.out.println("Vous êtes monsieur "+ nom + " votre solde est de : " + c3.toInt() + " euros ");
+		System.out.println("Bonjour monsieur "+ nom + " votre solde est de : " + c3.toInt() + " euros \n");
 		
 		
-		System.out.println("Deposer un montant sur votre compte");
+		System.out.println("Voulez vous faire un depot sur votre compte  1 pour oui / 2 pour non\n");
 	     depot = exc.nextInt();
 		
 		
 		// Deposer sur le compte 
-		
+	     
+	     if(depot == 1) {
+	    	 
+	    	 System.out.println("Veuillez indiquez la somme à deposer \n");
+	 		 depot = exc.nextInt();
+	 		
 		((Compte) c3).deposer(depot);
 		
 		System.out.println("\nTitulaire du compte: " + c3.titulaire+'\n');
 		
 		System.out.println("Depot: " + depot + " euro\n");
 		
-		System.out.println("Solde: " + c3.toInt()+" euro\n");
+		System.out.println("New Solde: " + c3.toInt()+" euro\n");
 		
+	     }
 		
 		// Retire de l'argent du compte
-		System.out.println("Vous vous faire un retrait oui 1 / non 2\n");
+		
+		System.out.println("Voulez vous effectuez un retrait 1 pour oui / 2 pour non\n");
 		answer = exc.nextInt();
 		
 		
@@ -50,9 +57,14 @@ public class Test {
 		
         System.out.println("Retrait: " + retrait + " euro\n");
 		
-		System.out.println("New Solde:" + c3.toInt());
+		System.out.println("New Solde:" + c3.toInt() + " euro\n");
 		
+		System.out.println("A bientôt monsieur " + nom);
 		
+		}
+		
+		else {
+			System.out.println("A bientôt monsieur " + nom);
 		}
 		
 		

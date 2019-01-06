@@ -30,13 +30,11 @@ public class Compte implements Convertible {
 	}
 	
 	
-	public void titulaire()
-	{
-		System.out.println(titulaire);
+	public String getTitulaire() {
+		return titulaire;
 	}
-	
-	
-	
+
+
 	public int toInt()
 	{
 		return solde;
