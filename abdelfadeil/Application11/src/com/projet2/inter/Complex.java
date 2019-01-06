@@ -15,7 +15,7 @@ public  class Complex implements IOperation, IAffichage{
 	@Override
 	public String affiche() {
 		
-		return " Résultats de numéro complex  "+ this.re +"  "+ this.im;
+		return " Résultats de numéro complex "+ this.re +"  "+ this.im;
 	}
 
 	public Complex plus(Complex c1) {
@@ -28,16 +28,16 @@ public  class Complex implements IOperation, IAffichage{
 
 
 	@Override
-	public Object moins(Object obj) {
-		// TODO Auto-generated method stub
-		return null;
+	public Object moins(Object c) {
+		Complex c1 = (Complex)c;
+		return new Complex(c1.re+this.re, c1.im+this.im);
 	}
 
 
 	@Override
-	public Object plus(Object obj) {
-		// TODO Auto-generated method stub
-		return null;
+	public Object plus(Object c) {
+		Complex c1 = (Complex)c;
+		return new Complex(c1.re+this.re, c1.im+this.im);
 	}
 
 
