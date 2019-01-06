@@ -47,7 +47,7 @@ public class Four implements Cuire{
 	public void afficher()
 	{
 		System.out.println("Je cuis un(e) " + aliment.getAliment() + "\navec ma capacité de " + this.capacite + " litres\n" + "et ma puissance de " + this.puissance + " degrés.");
-
+          System.out.println("");
 	}
 
 
