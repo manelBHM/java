@@ -1,5 +1,0 @@
-INDEX VERSION 1.4+/home/simplonco/Bureau/Exercice2/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3258429214.index
-3039862664.index
-741985842.index
-1548958397.index
