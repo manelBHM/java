@@ -1,7 +1,0 @@
-package com.projet2.inter;
-
-public interface IOperation {
-
-	<T> moins(<T> obj);
-	<T> plus(Object obj);
-}

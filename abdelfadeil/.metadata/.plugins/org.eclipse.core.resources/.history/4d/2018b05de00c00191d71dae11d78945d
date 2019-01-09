@@ -1,6 +1,0 @@
-
-public class Personne {
-	private String nom;
-	Personne ami;
-
-}

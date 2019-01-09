@@ -1,7 +1,0 @@
-package com.projet3.inter;
-
-public class Complex implements IOperation extends Affichage{
-	private double im;
-	private double re;
-
-}
