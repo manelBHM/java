@@ -1,9 +1,0 @@
-package app3;
-
-import java.util.Scanner;
-
-public class inverserString {
-	Scanner sc = new Scanner(System.in);
-	System.out.println("");
-
-}
