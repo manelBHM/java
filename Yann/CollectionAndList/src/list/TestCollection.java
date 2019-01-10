@@ -30,6 +30,7 @@ public class TestCollection {
 		
 		
 		List<String> sousListe = liste.subList(1, 4);
+		
 		afficherListe("Sous liste ", sousListe);
 		System.out.println();
 		sousListe.remove(1);
