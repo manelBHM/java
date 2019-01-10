@@ -1,7 +1,0 @@
-package com.projet3.inter;
-
-public interface IOperation {
-	public void plus();
-	public void moins();
-
-}

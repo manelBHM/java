@@ -1,6 +1,0 @@
-package com.projet.inter;
-
-public class Personne {
-	Profil profil;
-
-}

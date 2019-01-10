@@ -7,4 +7,7 @@
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="com.projet2.abstracts.Affichage"/>
+<fullyQualifiedTypeName name="com.projet3.inter.IOperation"/>
+<fullyQualifiedTypeName name="com.projet3.inter.Complexe"/>
+<fullyQualifiedTypeName name="com.projet3.inter.Reel"/>
 </qualifiedTypeNameHistroy>

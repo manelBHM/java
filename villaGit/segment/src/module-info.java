@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author simplonco
- *
- */
-module segment {
-}

@@ -1,6 +1,7 @@
 package Application_Vacances;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TableauTrace {
 	
@@ -37,15 +38,19 @@ public class TableauTrace {
 		System.out.println("indice du max du tableau = " + max);
 
 		System.out.println("Après ajout de 20 :");
-		System.out.println("Le tableua initial  est : (3 , -8, 14, 4)");
+		System.out.println("Le tableau initial  est : " + Arrays.toString(tableau));
 	
-		
+		int []tab2 = new int[tableau.length+1];
+			  tab2[tab2.length-1]=20;
 
-		// je suis bloqué sur la derniere question ( Ajouter l'element 20)
+
+				for (int i=0;i <tab2.length-1; i++) {
+
+					tab2[i] = tableau[i];
+				}
 		
-		
-		
-		
+		System.out.println("et le résultat est :" + Arrays.toString(tab2));
+			
 	}
 
 }
