@@ -44,19 +44,19 @@ public class Tableau {
 		// TODO Auto-generated method stub
 		
 		int[] tab = {3, -8, 14, 4};
+		int[] tab1 = {20};
 		
-	
-		
-		
-		
-	System.out.println("Longueur du tableau est = " +  getLongueur(tab));
+	//	System.out.println(array.tostring(tab));
+		     
+	    System.out.println("Longueur du tableau est = " +  getLongueur(tab));
 		System.out.println("La somme du tableau = " + getSomme(tab));
 		System.out.println("Indice du Max du tableau = " + getIndiceMax(tab));
-	
-		for(int i=0; i<tab.length; i++)
+		
+		for(int i = 0; i<tab.length; i++)
 		{
 			System.out.println(tab[i]);
 		}
+	     
 
 	}
 

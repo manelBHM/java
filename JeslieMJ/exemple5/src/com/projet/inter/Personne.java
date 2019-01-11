@@ -7,27 +7,19 @@ public class Personne {
 	private String nom;
 	private Date dateNais;
 	private double salaire;
+	public profil profil ;
 	
 	
-	 public Personne(String nom, Date dateNais, double salaire) { 
-	
-		
-		this.nom =nom;
-		this.dateNais = dateNais;
-		this.salaire = salaire;                                
-	
-	 }
+	 public profil getProfil() {
+		return profil;
+	}
 
-	 double calculerSalaire() {
-		 
-	double code = 0;
-	if(code==1) {
-		salaire = (salaire*0.1) + salaire;}
-		
+	public void setProfil(profil profil) {
+		this.profil = profil;
+	}
+
 	 
-		else if(code==2){
-		  salaire = (salaire*0.2)+ salaire;}
-		 return salaire;}
+
 	 
 	 
 	 
@@ -35,8 +27,55 @@ public class Personne {
     
 	      
     
- public void  affiche() {
-      System.out.println("Je m'appelle " + nom+". Je suis né le "+dateNais+". Mon salaire est de "+calculerSalaire() );
+ public Personne(String nom, Date dateNais, int salaire, profil profil) {
+		// TODO Auto-generated constructor stub
+	 this.nom =nom;
+		this.dateNais = dateNais;
+		this.salaire = salaire;   
+		this.profil=profil;
+	
+	}
+
+public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public Date getDateNais() {
+		return dateNais;
+	}
+
+	public void setDateNais(Date dateNais) {
+		this.dateNais = dateNais;
+	}
+
+	public double getSalaire() {
+		return salaire;
+	}
+
+	public void setSalaire(double salaire) {
+		this.salaire = salaire;
+	}
+
+	
+	
+
+	 double calculerSalaire() {
+		 
+	//double code;
+	if( profil.getLibelle().equals("DIR")) 
+		salaire = (this.salaire*0.1) + this.salaire;
+		
+	 
+		else if(profil.getLibelle().equals("DIR"))
+		  salaire = (this.salaire*0.2)+ this.salaire;
+		 return salaire;}
+	 
+public void  affiche() {
+      System.out.println("Je m'appelle " + this.nom+". Je suis né le "+this.dateNais+". Mon salaire est de "+  calculerSalaire());
 	 
 }
 }

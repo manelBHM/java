@@ -1,8 +1,0 @@
-package com.projet.inter;
-
-public interface Ipersonne {
-	
-	String affiche();
-	double  calculerSalaire();
-
-}

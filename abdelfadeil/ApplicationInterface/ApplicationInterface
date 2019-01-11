@@ -1,9 +1,0 @@
-1.Créer l’interface Ipersonne dans le package«com.projet.inter».
-2.Créer les classes Personne et Profil dans meme package
-3.Redéfinir les méthodes de l’interface affiche() et calculerSalaire() dans la classe
-Personne.Sachant que:
-*La méthode affiche() affiche une chaine de caractère sous la forme: « Je suis le
-directeur NOM PRENOM né le jj mm AAAA, mon salaire mensuel est XXXX Euro
-*Le directeur aura une augmentation de 20% par rapport à son salaire mensuel,
-*Les autres employés auront une augmentation de 10%.
-4.Ecrire un programme de test
