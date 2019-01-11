@@ -1,0 +1,57 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class myHashMap {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
+		hmap.put(3, "Date3");
+		hmap.put(2, "Date2");
+		hmap.put(4, "Date4");
+		hmap.put(1, "Date1");
+		
+		System.out.println();
+		for(String s: hmap.values()) {
+			System.out.print(s+" ");
+		}
+		
+		System.out.println();
+		
+		for(Integer s: hmap.keySet()) {
+			System.out.print(s+" ");
+		}
+		System.out.println();
+		for(Map.Entry<Integer, String> s: hmap.entrySet()) {
+			System.out.println(s.getKey() + " "+ s.getValue());
+		}
+		
+		
+		System.out.println("***********************");
+		
+		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
+		hmap.put(3, "Date3");
+		hmap.put(2, "Date2");
+		hmap.put(4, "Date4");
+		hmap.put(1, "Date1");
+		
+		System.out.println();
+		for(String s: hmap.values()) {
+			System.out.print(s+" ");
+		}
+		
+		System.out.println();
+		
+		for(Integer s: hmap.keySet()) {
+			System.out.print(s+" ");
+		}
+		System.out.println();
+		for(Map.Entry<Integer, String> s: hmap.entrySet()) {
+			System.out.println(s.getKey() + " "+ s.getValue());
+		}
+		
+		
+		
+	}
+
+}

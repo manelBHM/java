@@ -1,0 +1,15 @@
+package com.compare;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class test {
+
+	public static void main(String[] args) {
+		List<Stagiaire> stagiaires = new ArrayList<Stagiaire>();
+		
+		stagiaires.
+
+	}
+
+}

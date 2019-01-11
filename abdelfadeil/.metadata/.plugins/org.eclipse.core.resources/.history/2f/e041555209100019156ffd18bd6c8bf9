@@ -1,0 +1,43 @@
+package com.projet2.inter;
+
+public class Reel implements IOperation, IAffichage {
+
+	private double x;
+	
+	
+	public Reel(double x) {
+		this.x = x;
+	}
+
+	@Override
+	public String affiche() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public double moins(double x) {
+		double somme = this.x;
+		for (double d : x) {
+			
+		}
+		return somme;
+	}
+
+	public double plus(double x) {
+		// TODO Auto-generated method stub
+		return x;
+	}
+	@Override
+	public Object moins(Object obj) {
+		Reel reel = (Reel) obj;
+		return new Reel(this.x - reel.x);
+	}
+	@Override
+	public Object plus(Object obj) {
+		Reel reel = (Reel) obj;
+		return new Reel(this.x + reel.x);
+	}
+
+
+
+}

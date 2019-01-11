@@ -1,0 +1,32 @@
+import java.util.*;
+public class TreeSetTest {
+
+	public static void main(String[] args) {
+	 TreeSet<String> tree = new TreeSet<String>();
+	 tree.add("A");
+	 tree.add("B");
+	 tree.add("C");
+	 tree.add("D");
+	
+	 System.out.println(tree.lower("C"));
+	 System.out.println(tree.higher("C"));
+	 
+	 tree.add("E");
+	 tree.add("F");
+	 tree.add("G");
+	 tree.add("H");
+	 tree.add("I");
+	 tree.add("J");
+	 tree.add("K");
+	 tree.add("L"); 
+	 tree.add("M");
+	 tree.add("N");
+	 tree.add("O");
+	 
+	 System.out.println(tree.lower("C"));
+	 System.out.println(tree.higher("C"));
+	 
+	 
+	}
+
+}

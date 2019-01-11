@@ -1,0 +1,23 @@
+package com.cmpare;
+
+public class Author implements Comparable<Author> {
+
+	String fname;
+	String lname;
+	String bookname;
+	int id;
+	public Author(String fname, String lname, String bookname, int id) {
+		super();
+		this.fname = fname;
+		this.lname = lname;
+		this.bookname = bookname;
+		this.id = id;
+	}
+	@Override
+	public int compareTo(Author autheur) {
+		int com = this.lname.compareTo(autheur);
+		return 0;
+	}
+	
+	
+}

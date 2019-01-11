@@ -1,0 +1,20 @@
+package com.compare;
+
+import java.util.*;
+
+public class Stagaire implements Comparator<Stagaire> {
+	String nom;
+	int age, id;
+	
+	
+	
+
+	@Override
+	public int compare(Stagaire arg0, Stagaire arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+}
