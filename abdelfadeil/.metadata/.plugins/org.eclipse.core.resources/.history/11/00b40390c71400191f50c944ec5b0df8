@@ -1,0 +1,12 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class myHashMap {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
+		hmap.put(1, "Date1");
+	}
+
+}

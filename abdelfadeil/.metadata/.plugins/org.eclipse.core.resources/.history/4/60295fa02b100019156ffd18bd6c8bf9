@@ -1,0 +1,7 @@
+package constracteurExp;
+
+public class Exemple {
+	float f;
+	char ch;
+
+}

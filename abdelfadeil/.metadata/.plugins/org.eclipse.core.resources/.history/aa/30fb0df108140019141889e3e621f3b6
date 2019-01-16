@@ -1,0 +1,33 @@
+import java.util.List;
+import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class Couleur {
+	
+
+	
+	public static void main(String[] args) {
+		List<String> color = new ArrayList<String>();
+		color.add("Red");
+		color.add("Green");
+		color.add("Orange");
+		color.add("White");
+		color.add("Black");
+		
+	for (String str : color) {
+		System.out.println(str+" ");
+	}
+	// TreeSet<String> colors = (TreeSet<String>) color;
+	 Iterator<String> mescolor = color.iterator();
+	 mes
+	
+	while (mescolor.hasNext()) {
+		System.out.print(mescolor.next()+" ");
+		
+	}
+	
+	}
+
+}
