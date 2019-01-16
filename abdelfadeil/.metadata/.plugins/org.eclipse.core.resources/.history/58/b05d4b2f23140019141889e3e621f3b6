@@ -1,0 +1,9 @@
+package com.cmpare;
+
+public class sorAutor {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

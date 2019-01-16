@@ -1,0 +1,11 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class myHashMap {
+
+	public static void main(String[] args) {
+		HashMap<String, String> hm = new HashMap<String, String>();
+	}
+
+}

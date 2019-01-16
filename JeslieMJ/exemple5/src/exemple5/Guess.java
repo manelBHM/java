@@ -1,9 +1,17 @@
+<<<<<<< HEAD
+package exemple5;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+=======
 package src.exemple5;
 
 
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.scanner
+>>>>>>> 9731d8118d80b09b7d14eeaf403e7b8c423e4ae9
 public class Guess {
 
 	public static void main(String[] args) {

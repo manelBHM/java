@@ -1,0 +1,25 @@
+import java.util.*;
+public class TreeSetTest {
+
+	public static void main(String[] args) {
+	 TreeSet<String> tree = new TreeSet<String>();
+	 tree.add("A");
+	 tree.add("B");
+	 tree.add("C");
+	 tree.add("D");
+	
+	 System.out.println(tree.lower("C"));
+	 System.out.println(tree.higher("C"));
+
+	 System.out.println(tree.lower("C"));
+	 System.out.println(tree.higher("C"));
+	 
+	 tree.add("N");
+	 tree.add("S");
+	 tree.add("A");
+	 tree.add("B");
+	 tree.add("C");
+	 tree.add("D");
+	}
+
+}

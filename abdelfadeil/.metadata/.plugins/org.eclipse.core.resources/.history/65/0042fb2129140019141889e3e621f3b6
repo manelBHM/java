@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class EtudiantsArrays {
+
+	public static void main(String[] args) {
+		ArrayList<String> etudiants = new ArrayList<>();
+		
+		
+	}
+
+}
