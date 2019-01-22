@@ -68,7 +68,7 @@ public class Bill{
 		for(Map.Entry<Product, Integer> s : listProducts.entrySet())
 		{
 		
-			System.out.println(s.getKey() + " | Quantité : " + s.getValue());
+			System.out.println(s.getKey() + " | Quantité: " + s.getValue());
 		    
 		}	
 	}
@@ -92,10 +92,16 @@ public class Bill{
 	}
 	
 
-	public String afficherFacture()
-	{
+
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
 		return "Votre Facture est: " + total;
 	}
+	
+	
+	
 
 	
 }

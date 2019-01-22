@@ -17,9 +17,10 @@ public class RunMag {
 		Bill facture1= new Bill(c1);
 		
 		Bill facture2= new Bill(c2);
-
+		
 		facture1.addProduct(r1, 1);
-		facture1.addProduct(t1, 1); 
+		facture1.addProduct(t1, 1);
+		facture1.addProduct(f1, 2);
 		
 		facture2.addProduct(t2, 1);
         facture2.addProduct(r2, 2);
@@ -31,7 +32,7 @@ public class RunMag {
 		facture1.getProducts();
 		facture1.calculTotal();
 		System.out.println("");
-		System.out.println(facture1.afficherFacture());
+		System.out.println(facture1);
 		System.out.println(" -------------- ");
 		
 		System.out.println("");
@@ -40,7 +41,7 @@ public class RunMag {
 		facture2.getProducts();
 		facture2.calculTotal();
 		System.out.println("");
-		System.out.println(facture2.afficherFacture());
+		System.out.println(facture2);
 		System.out.println(" -------------- ");
 
 	
