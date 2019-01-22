@@ -6,7 +6,7 @@ public class Pokemon {
 	private String nom;
 	private int pv;
 	private static int id;
-	
+
 
 	public Pokemon(String nom, int pv)
 	{
@@ -34,7 +34,7 @@ public class Pokemon {
 	public void setPv(int pv) {
 		this.pv = pv;
 	}
-	
+
 
 	@Override
 	public String toString() {
@@ -54,9 +54,9 @@ public class Pokemon {
 			System.out.println(this.getNom()+" est de même niveau que " + " " + pk.getNom());
 
 	}
-	
-	
-	
+
+
+
 
 
 
