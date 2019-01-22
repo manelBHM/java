@@ -1,10 +1,10 @@
 package apply.product;
 
 public class Client<fullname, address> {
-	
+
 	private String fullname;
 	private String address;
-	
+
 	public Client(String fullname, String address)
 	{
 		this.fullname=fullname;
@@ -39,8 +39,8 @@ public class Client<fullname, address> {
 		// TODO Auto-generated method stub
 		return "Fullname: " + this.getFullname() + " | " + "Address: " + this.getAddress();
 	}
-	
-	
-	
-	
+
+
+
+
 }

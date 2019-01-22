@@ -1,13 +1,13 @@
 package apply.product;
 
 public class Product<name, description, price>{
-	
+
 	protected name name;
 	protected description description;
 	protected price price;
-	
-	
-	
+
+
+
 	public Product(name name, description description, price price) {
 		// TODO Auto-generated constructor stub
 		super();
@@ -15,8 +15,8 @@ public class Product<name, description, price>{
 		this.description=description;
 		this.price=price;
 	}
-	
-	
+
+
 	public name getName() {
 		return name;
 	}
@@ -51,12 +51,12 @@ public class Product<name, description, price>{
 	public void setPrice(price price) {
 		this.price = price;
 	}
-	
-	
+
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Product: " + this.name + " | Description: "+ this.description + " | Price: "+ this.price;
 	}
-	
+
 }
