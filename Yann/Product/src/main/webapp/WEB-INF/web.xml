@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>FormServlet</servlet-name>
+  	<display-name>FormServlet</display-name>
+  	<description></description>
+  	<servlet-class>apply.product.FormServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Test</servlet-name>
+  	<display-name>Test</display-name>
+  	<description></description>
+  	<servlet-class>Test</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Formservlet</servlet-name>
+  	<display-name>Formservlet</display-name>
+  	<description></description>
+  	<servlet-class>apply.product.Formservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FormServlet</servlet-name>
+  	<url-pattern>/FormServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Test</servlet-name>
+  	<url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Formservlet</servlet-name>
+  	<url-pattern>/Formservlet</url-pattern>
+  </servlet-mapping>
 </web-app>
