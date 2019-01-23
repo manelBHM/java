@@ -96,7 +96,6 @@ public class Bill implements Delivery{
 	public double calculTotal()
 	{	
 		double v,k;
-		
 
 		for(Map.Entry<Product, Integer> s : listProducts.entrySet())
 		{
@@ -109,7 +108,6 @@ public class Bill implements Delivery{
 			}
 
 			else {total+=(v*k)+this.delivery.getPrice();}
-			
 		}
 		return total;
 	}
@@ -135,9 +133,9 @@ public class Bill implements Delivery{
 		write.writeLine("");
 		write.writeLine("Fullname: " + this.getClient().getFullname());
 		write.writeLine("");
-		write.writeLine("Adresse: " + this.getClient().getAddress()+" "+this.getClient().getCodePostal());
+		write.writeLine("Adresse: " + this.getClient().getAddress()+", "+this.getClient().getCodePostal());
 		write.writeLine("");
-		write.writeLine("Mode de livraison: " + delivery.toString());
+		write.writeLine(this.toString());
 		write.writeLine("");
 		write.writeLine("Produits");
 		write.writeLine("---------------------------");
@@ -153,13 +151,16 @@ public class Bill implements Delivery{
 
 			del = this.delivery.getPrice();
 
-
 			int quantite = s.getValue();
 
-			if(val>1)
-			{total+=val*key+del;}
-			else {
-				total+=key+del;}
+			if(delivery == null)
+			{
+				total+=key*val;
+			}
+			else
+			{
+				total+=val*key+del;
+			}
 
 			Product product = s.getKey();
 			write.writeLine(product.getName() + " - " + product.getPrice() + " - " + quantite + " unité(s)");
@@ -172,9 +173,9 @@ public class Bill implements Delivery{
 		write.writeLine("Total: " + this.total);
 		write.stop();
 	}
-	
-	
-	
+
+
+
 	public void generateNoDelivery(Writer writer)
 	{
 		writer.start(); 
@@ -182,7 +183,7 @@ public class Bill implements Delivery{
 		writer.writeLine("");
 		writer.writeLine("Fullname: " + this.getClient().getFullname());
 		writer.writeLine("");
-		writer.writeLine("Adresse: " + this.getClient().getAddress()+" "+this.getClient().getCodePostal());
+		writer.writeLine("Adresse: " + this.getClient().getAddress()+", "+this.getClient().getCodePostal());
 		writer.writeLine("");
 		writer.writeLine("Produits");
 		writer.writeLine("---------------------------");
@@ -190,7 +191,7 @@ public class Bill implements Delivery{
 		for(Map.Entry<Product, Integer> s : listProducts.entrySet())
 		{
 
-			double total=0, key,val,del;
+			double total=0, key,val;
 
 			key=(Double) s.getKey().getPrice();
 
@@ -198,10 +199,14 @@ public class Bill implements Delivery{
 
 			int quantite = s.getValue();
 
-			if(val>1)
-			{total+=val*key;}
-			else {
-				total+=key;}
+			if(delivery == null)
+			{
+				total+=key;
+			}
+			else 
+			{
+				total+=val*key;
+			}
 
 			Product product = s.getKey();
 			writer.writeLine(product.getName() + " - " + product.getPrice() + " - " + quantite + " unité(s)");

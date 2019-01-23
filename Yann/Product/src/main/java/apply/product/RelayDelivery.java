@@ -3,6 +3,8 @@ package apply.product;
 public class RelayDelivery implements Delivery {
 
 	private int pointRelais;
+	private double rPrice;
+	
 	public RelayDelivery(int pointRelais)
 	{
 		this.pointRelais=pointRelais;
@@ -24,8 +26,7 @@ public class RelayDelivery implements Delivery {
 
 	public double getPrice() {
 		// TODO Auto-generated method stub
-		double rPrice=0;
-
+		
 		if(this.pointRelais<=22)
 		{
 			rPrice = 0;
@@ -48,7 +49,7 @@ public class RelayDelivery implements Delivery {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Vous avez choisis ** Relay Delivery ** comme livraison: " + this.getPrice();
+		return "Vous avez choisis ** Relay Delivery ** comme mode de livraison\nPrix de la livraison: " + this.getPrice();
 	}
 
 	
