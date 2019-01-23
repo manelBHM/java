@@ -159,7 +159,7 @@ public class Bill implements Delivery{
 			}
 			else
 			{
-				total+=val*key+del;
+				total+=key*val+del;
 			}
 
 			Product product = s.getKey();
@@ -199,13 +199,13 @@ public class Bill implements Delivery{
 
 			int quantite = s.getValue();
 
-			if(delivery == null)
+			if(val>0)
 			{
-				total+=key;
+				total+=key*val;
 			}
 			else 
 			{
-				total+=val*key;
+				total+=key;
 			}
 
 			Product product = s.getKey();
