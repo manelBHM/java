@@ -125,7 +125,7 @@ public class Bill implements Delivery{
 	}
 
 
-	public String generate(Writer write)
+	public void generate(Writer write)
 	{
 		write.start(); 
 		write.writeLine("Facture a l'attention de: ");
@@ -164,14 +164,11 @@ public class Bill implements Delivery{
 		write.writeLine("Total: " + this.total);
 		write.stop();
 
-
-
-		return total+"";
 	}
 
 
 
-	public String generateNoDelivery(Writer writer)
+	public void generateNoDelivery(Writer writer)
 	{
 		writer.start(); 
 		writer.writeLine("Facture a l'attention de: ");
@@ -204,8 +201,6 @@ public class Bill implements Delivery{
 		writer.writeLine("Total: " + this.total);
 		writer.stop();
 
-
-		return total+"";
 	}
 
 }
