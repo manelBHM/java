@@ -12,7 +12,7 @@ public class ExpressDelivery extends Client implements Delivery{
 	public double getPrice() {
 		// TODO Auto-generated method stub
 
-		if(this.getCodePostal()>=75020)
+		if(this.getCodePostal()>75020)
 		{
 			ePrice = 9.99;
 		}

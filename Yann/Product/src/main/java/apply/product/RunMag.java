@@ -4,22 +4,23 @@ public class RunMag {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Client c1 = new Client("Stanley", "55 rue de vincenne", 93160);
+		Client c1 = new Client("Stanley", "55 rue de vincenne", 75020);
 		Client c2 = new Client("Mahf", "12 rue de Paris", 75015);
 
 
-		Télévision t1 = new Télévision("Télévision", "Samsung HD, Noir", 200, 57, "plasma");
+		Télévision t1 = new Télévision("Télévision", "Samsung HD, Noir", 400, 57, "plasma");
 		Four f1 = new Four("Four", "Compact Stable, Gris", 150, "Multi-Fonction");
 		Refrigerateur r1 = new Refrigerateur("Réfrigerateur", "Whirlpool, 80l, 1m, noir", 360);
 
 		Four f2 = new Four("Four", "High One, Blanc", 263, "Compact-Multi-Fonction");
-		Refrigerateur r2 = new Refrigerateur("Réfrigerateur", "Compact, 120l, 130cm, blanc", 100);
+		Product r2 = new Refrigerateur("Réfrigerateur", "Compact, 120l, 130cm, blanc", 100);
 		Télévision t2 = new Télévision("Télévision", "KDK HD waterproof, Sony, Noir", 500, 57, "Plat");
 
-		ExpressDelivery e = new ExpressDelivery("55 rue de vincenne", 93160);
-		RelayDelivery r = new RelayDelivery(44);
+		Delivery e = new ExpressDelivery("55 rue de vincenne", 75020);
+		
+		Delivery r = new RelayDelivery(44);
 
-		Bill facture1 = new Bill(c1, r);
+		Bill facture1 = new Bill(c1, e);
 
 		System.out.println("Client n° 1 ==> Commande avec Livraison Express\n");
 
@@ -55,7 +56,7 @@ public class RunMag {
 
 		facture2.addProduct(t2, 1);
 
-		facture2.addProduct(f2, 2);
+		facture2.addProduct(f2, 1);
 
 		facture2.getProducts();
 

@@ -95,21 +95,20 @@ public class Bill implements Delivery{
 
 	public double calculTotal()
 	{	
-		double v,k;
+		double v,k,del;
 
 		for(Map.Entry<Product, Integer> s : listProducts.entrySet())
 		{
 			k=(Double) s.getKey().getPrice();
 			v=s.getValue();
 
-			if(delivery == null)
-			{
-				total+=(v*k);
-			}
-
-			else {total+=(v*k)+this.delivery.getPrice();}
+			total+=k*v;
 		}
+
+		if(delivery != null)
+			total+=this.delivery.getPrice();
 		return total;
+
 	}
 
 
@@ -126,7 +125,7 @@ public class Bill implements Delivery{
 	}
 
 
-	public void generate(Writer write)
+	public String generate(Writer write)
 	{
 		write.start(); 
 		write.writeLine("Facture a l'attention de: ");
@@ -135,7 +134,7 @@ public class Bill implements Delivery{
 		write.writeLine("");
 		write.writeLine("Adresse: " + this.getClient().getAddress()+", "+this.getClient().getCodePostal());
 		write.writeLine("");
-		write.writeLine(this.toString());
+		write.writeLine(this.getDelivery()+"");
 		write.writeLine("");
 		write.writeLine("Produits");
 		write.writeLine("---------------------------");
@@ -143,40 +142,36 @@ public class Bill implements Delivery{
 		for(Map.Entry<Product, Integer> s : listProducts.entrySet())
 		{
 
-			double total=0, key,val,del;
+			double total=0, key,val;
 
 			key=(Double) s.getKey().getPrice();
 
 			val=s.getValue();
 
-			del = this.delivery.getPrice();
-
 			int quantite = s.getValue();
 
-			if(delivery == null)
-			{
-				total+=key*val;
-			}
-			else
-			{
-				total+=key*val+del;
-			}
+			total+=key;
 
 			Product product = s.getKey();
 			write.writeLine(product.getName() + " - " + product.getPrice() + " - " + quantite + " unité(s)");
 			write.writeLine(product.getDescription()+"");
 			write.writeLine("");
 		}
+	
 
 		write.writeLine("Livraison: " + delivery.getPrice());
 		write.writeLine("------------------------");
 		write.writeLine("Total: " + this.total);
 		write.stop();
+
+
+
+		return total+"";
 	}
 
 
 
-	public void generateNoDelivery(Writer writer)
+	public String generateNoDelivery(Writer writer)
 	{
 		writer.start(); 
 		writer.writeLine("Facture a l'attention de: ");
@@ -199,24 +194,18 @@ public class Bill implements Delivery{
 
 			int quantite = s.getValue();
 
-			if(val>0)
-			{
-				total+=key*val;
-			}
-			else 
-			{
-				total+=key;
-			}
-
 			Product product = s.getKey();
 			writer.writeLine(product.getName() + " - " + product.getPrice() + " - " + quantite + " unité(s)");
 			writer.writeLine(product.getDescription()+"");
 			writer.writeLine("");
 		}
-
+	
 		writer.writeLine("------------------------");
 		writer.writeLine("Total: " + this.total);
 		writer.stop();
+
+
+		return total+"";
 	}
 
 }
