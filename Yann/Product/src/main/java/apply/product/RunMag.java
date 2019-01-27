@@ -18,8 +18,6 @@ public class RunMag {
 
 		Delivery e = new ExpressDelivery("55 rue de vincenne", 75020);
 		
-		Delivery r = new RelayDelivery(44);
-
 		Bill facture1 = new Bill(c1, e);
 
 		System.out.println("Client n° 1 ==> Commande avec Livraison Express\n");
