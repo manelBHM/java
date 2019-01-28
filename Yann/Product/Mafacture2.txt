@@ -1,0 +1,19 @@
+Facture a l'attention de: 
+
+Fullname: Mahf
+
+Adresse: 12 rue de Paris, 75015
+
+Produits
+---------------------------
+Télévision - 500.0 - 1 unité(s)
+KDK HD waterproof, Sony, Noir
+
+Four - 263.0 - 1 unité(s)
+High One, Blanc
+
+Réfrigerateur - 100.0 - 2 unité(s)
+Compact, 120l, 130cm, blanc
+
+------------------------
+Total: 963.0
