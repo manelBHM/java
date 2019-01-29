@@ -214,7 +214,7 @@ for (Map.Entry<Product, Integer> entry : produits.entrySet()) {
     </div>
   </div>
     <div class="mb-3">
-    <label for="validationTextarea">Liste produits (produit:quantité, un produit par ligne) : </label>
+    <label for="validationTextarea">Liste produits (produit:quantité&produit:quantité ... etc) : </label>
     <textarea class="form-control" name="listeProduit" id="validationTextarea" placeholder="Produits: quantité, un produit par ligne"></textarea>
     </div>
   <div class="form-group row">
