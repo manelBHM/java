@@ -105,7 +105,7 @@ try {
 		modlivre = new ExpressDelivery(address);
 		break;
 	case "option3":
-		modlivre = new RelayDelivery(id);
+		modlivre = new RelayDelivery(this.produit.getId());
 		break;
 	case "option4":
 		modlivre = new TakAwayDelivery();
@@ -164,7 +164,7 @@ try {
 		
 try {
     String total = " Total "+ bill.getTotal() + "€";
-           infos = total +" : "+modlivre.getInfo();
+           infos = total +"\n : "+modlivre.getInfo();
 
 	request.setAttribute("infoLivarison", infos);
 	

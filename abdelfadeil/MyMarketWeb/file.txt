@@ -11,16 +11,16 @@ Mode de livration : Livraison � Domicile 4.99
 Produits : 
 
 -------------------------------
-Lenovo Yoga 920  - 680.0$ - 2 unité
- Processeur Intel Core i5-8250U  Ecran 13.9 pouces, 1920 x 1080 pixels 
-
-Sammsung - 700.0$ - 2 unité
+Sammsung - 700.0$ - 4 unité
 TV HD 32'', 100 PQI
 
-huawei p20 - 850.0$ - 2 unité
+huawei p20 - 850.0$ - 4 unité
 Processeur Kirin 970 Mémoire vive 4 Go Écran 5,8 pouces
 
+Lenovo Yoga 920  - 680.0$ - 4 unité
+ Processeur Intel Core i5-8250U  Ecran 13.9 pouces, 1920 x 1080 pixels 
+
 Liviration 4.99$
-Total Price: 4464.99$
+Total Price: 8924.99$
 
 _________________________________
