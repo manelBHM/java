@@ -72,14 +72,14 @@ public class Bill{
 		}
 		//int allQun = quantity + quantity;
 		System.out.println("Liviration "+delivery.getPrice()+"$");
-		System.out.println("Total Price: " +this.getTotal(map)+"$");
+		System.out.println("Total Price: " +this.getTotal()+"$");
 		System.out.println("\n_________________________________");
 		
 	}else {
 		System.out.println("Sorry Is Empty ");
 	}
 	}
-	public double getTotal(Map<Product, Integer> map) {
+	public double getTotal() {
 		double total = 0;
 		for (Map.Entry<Product, Integer> str : map.entrySet()) {
 			
@@ -114,7 +114,7 @@ public class Bill{
 		}
 		//int allQun = quantity + quantity;
 		System.out.println("Liviration "+delivery.getPrice()+"$");
-		System.out.println("Total Price: " +this.getTotal(map)+"$");
+		System.out.println("Total Price: " +this.getTotal()+"$");
 		System.out.println("\n_________________________________");
 		
 	}else {
@@ -149,7 +149,7 @@ public class Bill{
 				}
 				//int allQun = quantity + quantity;
 				w.println("Liviration "+delivery.getPrice()+"$");
-				w.println("Total Price: " +this.getTotal(map)+"$");
+				w.println("Total Price: " +this.getTotal()+"$");
 				w.println("\n_________________________________");
 			}else {
 				System.out.println("Sorry Is Empty ");
@@ -191,7 +191,7 @@ public class Bill{
 				}
 				//int allQun = quantity + quantity;
 				fichier.println("Liviration "+delivery.getPrice()+"$");
-				fichier.println("Total Price: " +this.getTotal(map)+"$");
+				fichier.println("Total Price: " +this.getTotal()+"$");
 				fichier.println("\n_________________________________");
 			}else {
 				System.out.println("Sorry Is Empty ");

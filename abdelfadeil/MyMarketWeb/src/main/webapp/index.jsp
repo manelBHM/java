@@ -121,7 +121,7 @@ text-decoration: underline;
   <p><span>Infos  : </span> <%= request.getAttribute("infoLivarison") %></p>
 </div>
 
-<h2 id="h4">Liste des produits</h2>
+<h2 id="h4" style="font-size:22px;padding:0px;margin:5px;color:#157e8f;">Liste des produits</h2>
   
 <!-- <ul class="list-unstyled">
   <li class="media">
@@ -132,25 +132,25 @@ text-decoration: underline;
     </div>
   </li> -->
   <% 
+  int i = 0;
 if((Map<Product, Integer>)request.getAttribute("allProducts")!=null){
 	Map<Product, Integer> produits = (Map<Product, Integer>)request.getAttribute("allProducts");
 
 for (Map.Entry<Product, Integer> entry : produits.entrySet()) {
-	%>
-
+	
+	 %>
 	<li class="media">
     <img src="https://www.egilia.com/images/logo/microsoft/windows-10-logo.jpg" class="mr-3" alt="...">
     <div class="media-body">
-      <h3 class="mt-0 mb-1"><% out.println(entry.getKey().getId());
-      out.print(entry.getKey().getDesc());
-      %></h3>
-      <p>
-      <% 
-    out.println(entry.getKey().toString() + ":" + entry.getValue());
-
-	%></p>
+      <% out.println(i+" "+entry.getKey().toString() + " : "); 
+     i++;
+      %>
+    
     </div>	
     </li>
+
+
+	
     
     <% 
  }
@@ -214,7 +214,9 @@ for (Map.Entry<Product, Integer> entry : produits.entrySet()) {
     </div>
   </div>
     <div class="mb-3">
-    <label for="validationTextarea">Liste produits (produit:quantité&produit:quantité ... etc) : </label>
+    <p style="font-size:18px;padding:0px;margin:5px;color:#157e8f;"> Produits : tele, telephone , computer </p>
+    <p style="font-size:20px;padding:0px;margin:5px;color:#157e8f;" for="validationTextarea">Liste produits (produit:quantité&produit:quantité ... etc) : </p>
+    
     <textarea class="form-control" name="listeProduit" id="validationTextarea" placeholder="Produits: quantité, un produit par ligne"></textarea>
     </div>
   <div class="form-group row">

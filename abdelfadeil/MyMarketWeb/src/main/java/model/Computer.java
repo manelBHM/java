@@ -33,6 +33,8 @@ public int getQuantite() {
 	return this.quantite;
 }
 
+	
+
 
 
 

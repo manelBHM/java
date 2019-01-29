@@ -8,11 +8,11 @@ public class Product {
    private double price;
    static int nobPro;
    private Bill bill;
+   private int quantite;
   
 private int id;
    
 public Product(String name, String desc, double price) {
-	super();
 	this.name = name;
 	this.desc = desc;
 	this.price = price;
@@ -27,6 +27,9 @@ public static int getNobPro() {
 	return nobPro;
 }
 public int getId() {
+	return id;
+}
+public int getQuantite() {
 	return id;
 }
 
@@ -55,9 +58,9 @@ public void look() {
 			" Price: "+this.getPrice() );
 }
 @Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return this.getId() + " : "+ this.getName() +" : " + this.getPrice() + " ";
-	}
+public String toString() {
+	
+	return " "+this.getName()+ " Desc: "+this.getDesc()+ " Price: "+this.getPrice()+ " quantité " + this.getQuantite();
+}
    
 }

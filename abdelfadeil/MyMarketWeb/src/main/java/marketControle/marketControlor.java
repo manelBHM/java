@@ -83,9 +83,8 @@ public class marketControlor extends HttpServlet {
 		// récupérer le nom (fullname) et l'adress du client
 		String name = request.getParameter("name");
 		String address = request.getParameter("address");
-		String infoLivarison = request.getParameter("infoLivarison");
-
-		request.setAttribute("infoLivarison", infoLivarison);
+		String infos = "";
+		request.setAttribute("infoLivarison", infos);
 		// envoyer le nom et l'adresse à la page jsp
 		request.setAttribute("name", name);
 		request.setAttribute("address", address);
@@ -162,7 +161,12 @@ try {
 		}
 //		double to = bill.getTotal( bill.getProducts());
 //		request.setAttribute("to", to);
+		
 try {
+    String total = " Total "+ bill.getTotal() + "€";
+           infos = total +" : "+modlivre.getInfo();
+
+	request.setAttribute("infoLivarison", infos);
 	
 	Map<Product, Integer> allProducts	= bill.getProducts();
 
