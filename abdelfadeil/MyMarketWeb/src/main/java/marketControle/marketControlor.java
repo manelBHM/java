@@ -31,7 +31,6 @@ public class marketControlor extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	Product produit;
 	Product tele;
-	Product phone;
 	Product computer;
 	Product telephone;
 	Bill bill;
@@ -62,11 +61,11 @@ public class marketControlor extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String name = "";
-		String address = "";
+		String name = " ";
+		String address = " ";
 		request.setAttribute("name", name);
 		request.setAttribute("address", address);
-		String infoLivarison = "";
+		String infoLivarison = " ";
         request.setAttribute("infoLivarison", infoLivarison);
 		// String params = request.getQueryString();
 		request.getRequestDispatcher("index.jsp").forward(request, response);	
@@ -128,7 +127,7 @@ try {
 	       
 	       List<String> p = new ArrayList<>();
 			List<Integer> q = new ArrayList<>();
-	       
+			String [] my;
 	       for (int i = 0; i < myT.length; i++) {
 	       String [] myt= myT[i].split(":");
 	       	p.add(myt[0]);
@@ -143,7 +142,9 @@ try {
 
 		
 		for (int i = 0; i < p.size(); i++) {
+			
 			String leProduit = p.get(i);
+			
 			switch (leProduit) {
 			case "computer":
 				computer = new  Computer("Lenovo Yoga 920 ", " Processeur Intel Core i5-8250U  Ecran 13.9 pouces, 1920 x 1080 pixels ", 680, 13,  q.get(i));

@@ -132,7 +132,7 @@ text-decoration: underline;
     </div>
   </li> -->
   <% 
-  int i = 0;
+  int i = 1;
 if((Map<Product, Integer>)request.getAttribute("allProducts")!=null){
 	Map<Product, Integer> produits = (Map<Product, Integer>)request.getAttribute("allProducts");
 
@@ -142,7 +142,7 @@ for (Map.Entry<Product, Integer> entry : produits.entrySet()) {
 	<li class="media">
     <img src="https://www.egilia.com/images/logo/microsoft/windows-10-logo.jpg" class="mr-3" alt="...">
     <div class="media-body">
-      <% out.println(i+" "+entry.getKey().toString() + " : "); 
+      <% out.println(i+" "+entry.getKey() + " : "); 
      i++;
       %>
     
@@ -219,7 +219,9 @@ for (Map.Entry<Product, Integer> entry : produits.entrySet()) {
     
     <textarea class="form-control" name="listeProduit" id="validationTextarea" placeholder="Produits: quantité, un produit par ligne"></textarea>
     </div>
+   
   <div class="form-group row">
+  
     <div class="col-sm-10">
       <button type="submit" class="btn bg-info btn-lg btn-block">Envoyer</button>
     </div>
@@ -228,12 +230,7 @@ for (Map.Entry<Product, Integer> entry : produits.entrySet()) {
 </div>
   </div>
 </div>
-<div>
-  
 
-
-
-</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
