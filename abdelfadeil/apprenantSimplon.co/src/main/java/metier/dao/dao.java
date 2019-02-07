@@ -30,9 +30,9 @@ public class dao implements Idao<apprenant> {
     
     
 	public void Create(apprenant s) {
+		connection = getConnection();
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(url, user, pw);
+			
 			Statement st = connection.createStatement();
 			String sql= "INSERT INTO `apprenant` (`nom`, `prenom`, `date_naissance`, `active`) VALUES ('"+s.getNom()+"', '"+s.getPrenom()+"','"+s.getDate_naissance()+"','"+s.getActive()+"')";
 			st.executeUpdate(sql);
@@ -48,9 +48,8 @@ public class dao implements Idao<apprenant> {
 	}
 
 	public void Delete(int id) {
+		connection = getConnection();
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(url, user, pw);
 			Statement st = connection.createStatement();
 			String sql= "DELETE FROM `apprenant` WHERE `apprenant`.`id` = '"+id+"'";
 			st.executeUpdate(sql);
@@ -64,9 +63,8 @@ public class dao implements Idao<apprenant> {
 	}
 
 	public void Update(apprenant a) {
+		connection = getConnection();
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(url, user, pw);
 			Statement st = connection.createStatement();
 			String sql= "INSERT INTO `apprenant` (`nom`, `prenom`, `date_naissance`, `active`) VALUES ('aa', 'SS', 'AA', '1')";
 			st.executeUpdate(sql);
@@ -81,9 +79,8 @@ public class dao implements Idao<apprenant> {
 
 	public List<apprenant> findByKeyWord(String kw) {
 		List<apprenant> etudiants = new ArrayList<apprenant>();
+		connection = getConnection();
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(url, user, pw);
 			Statement st = connection.createStatement();
 			String sql= "SELECT * FROM `apprenant` WHERE nom LIKE '"+"%"+kw+"%"+"'";
 			ResultSet rs = st.executeQuery(sql);
@@ -109,9 +106,8 @@ public class dao implements Idao<apprenant> {
 
 	public List<apprenant> findAll() {
 		List<apprenant> etudiants = new ArrayList<apprenant>();
+		connection = getConnection();
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(url, user, pw);
 			Statement st = connection.createStatement();
 			String sql= "SELECT * FROM `apprenant` ORDER BY `id` ASC";
 			ResultSet rs = st.executeQuery(sql);
@@ -137,9 +133,8 @@ public class dao implements Idao<apprenant> {
 	@Override
 	public apprenant FindById(int id) {
 		apprenant a = new apprenant();
+		connection = getConnection();
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(url, user, pw);
 			Statement st = connection.createStatement();
 			String sql= "SELECT  FROM `apprenant` WHERE `id='"+id+"'";
 			ResultSet rs = st.executeQuery(sql);
@@ -161,3 +156,4 @@ public class dao implements Idao<apprenant> {
 	}
 
 }
+
