@@ -10,12 +10,12 @@ import personne.Personne;
 @Controller
 public class appThymeleaf {
 
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String myApp(Model model) {
 		
 		model.addAttribute("p1", new Personne("Anne-Marie", "Stephe"));
 		model.addAttribute("p2", new Personne("Claud", "Bernard"));
 		
-		return "index.jsp";
+		return "index";
 	}
 }
