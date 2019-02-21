@@ -1,19 +1,17 @@
 
-public class Capital extends Ville{
+public class Capital extends Pays{
 	
 	String nomCapital;
 	
-	public Capital(String nomP, int nbH,String nomC){
-		
-		super(nomP,nbH);
-		
-		this.nomCapital= nomC;
-		
+	public Capital(String nomP,int nombrH,String nomC){
+		super(nomP,nombrH);
+		this.nomCapital=nomC;	
 	}
 	
-	public Capital(int nbH,String nomC) {
-		super(nbH);
-		this.nomCapital=nomC;
+	
+	public Capital(int nombrH,String nomC){
+		super(nombrH);
+		nomCapital = nomC;
 	}
 	
 	protected String affiche() {
@@ -22,7 +20,7 @@ public class Capital extends Ville{
 		
 		afficher = super.affiche();
 		
-		afficher = afficher+", et sa capital est "+nomCapital;
+		afficher = afficher + " et sa capital est "+nomCapital;
 		
 		return afficher;
 	}
