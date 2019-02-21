@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+/home/simplonco/Bureau/workspace/exple4/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+651057763.index

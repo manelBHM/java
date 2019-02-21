@@ -1,0 +1,25 @@
+package exple4;
+
+public class Restaurant {
+
+	public static void main(String[] arg) {
+		
+		
+	int poulet, boeuf, vegetarien;
+	
+if(poulet) {
+	System.out.println("Vous avez choisie le poulet");
+}
+else if(boeuf) {
+	System.out.println("Vous avez choisie le boeuf");
+}
+
+else if(vegetarien) {
+	System.out.println("Vous avez choisie vegetarien");
+}
+else {
+	System.out.println("Vous n'avez pas fait votre choix");
+}
+
+	}
+}

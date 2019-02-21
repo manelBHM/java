@@ -1,0 +1,55 @@
+package exple3;
+
+public class calcul {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+int a = 6, b = 3;
+
+if(a<b) {
+	System.out.println("resultat = " + a);
+}
+else if(a>b) {
+	System.out.println("resultat = " + b);
+
+}	
+else {
+
+	System.out.println("resultat = " + (a=b));
+}
+
+
+int c = 6, d = 0;
+
+if(c<d) {
+	System.out.println("resultat = " + false);
+}
+else if(c>d) {
+	System.out.println("resultat = " + true);
+
+}	
+else {
+
+	System.out.println("resultat = " + null);
+}
+
+
+int e = 16, f = 50;
+
+if(e<f) {
+	System.out.println("resultat = " + false);
+}
+else if(e>f) {
+	System.out.println("resultat = " + true);
+
+}	
+else {
+
+	System.out.println("resultat = " + null);
+}
+
+
+	}
+
+}

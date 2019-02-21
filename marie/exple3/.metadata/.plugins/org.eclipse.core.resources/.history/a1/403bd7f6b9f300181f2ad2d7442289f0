@@ -1,0 +1,14 @@
+package exple3;
+
+public class declaration {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String phrase;
+String str = new String();
+String string = "une chaine";
+String chaine = new String("une autre chaine");
+	}
+
+}
+System out.println();

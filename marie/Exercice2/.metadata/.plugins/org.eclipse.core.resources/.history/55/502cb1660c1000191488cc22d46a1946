@@ -1,0 +1,12 @@
+package app11;
+
+public interface IOperation {
+
+	static void plus(Object obj) {
+		
+	}
+	
+	static void moins(Object obj) {
+		
+	}
+}
