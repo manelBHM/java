@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+
+<body>
+
+<p> customer form </p>
+
+
+
+//we removed this customerDAO bcoz we want inject CustomerService instead as we already removed Transaction to it 
+	//inject customer DAO 
+	//@Autowired
+	//private CustomerDAO customerDAO;
+
+</body>
+</html>

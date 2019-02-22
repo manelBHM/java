@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Tue Feb 19 13:59:36 CET 2019
+org.eclipse.jst.jee.server\:/binary\:/home/raed/eclipse-workspace/spring2-mvc-simplon/WebContent/WEB-INF/lib/spring-web-5.1.4.RELEASE.jar=WEB-INF/lib/spring-web-5.1.4.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/raed/eclipse-workspace/customer-web-udemqqq/WebContent/WEB-INF/lib/spring-web-5.1.4.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.1.4.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:/home/raed/eclipse-workspace/customer-web-udemqqq/WebContent/WEB-INF/lib/spring-web-5.1.4.RELEASE.jar=WEB-INF/lib/spring-web-5.1.4.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/raed/eclipse-workspace/spring2-mvc-simplon/WebContent/WEB-INF/lib/spring-web-5.1.4.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.1.4.RELEASE-sources.jar

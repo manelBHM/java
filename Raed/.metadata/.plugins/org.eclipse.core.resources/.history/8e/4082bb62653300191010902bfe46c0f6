@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class StagiaireController {
+	
+	
+	
+	@GetMapping(value= {"/", "/home"})
+	public String home(Model theModel) {
+		String salut = "Bienvenu dans l'annauaire des stagiaire";
+		theModel.addAttribute("welcome", salut);
+		return "home";
+	}
+	
+	
+	
+
+}

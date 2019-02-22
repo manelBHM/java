@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2 th:text="${welcome}"></h2>
+	
+	<div id="container">
+		
+		<table>
+		
+		<body>
+			<tr>
+				<th>prenom</th>
+				<th>nom</th>
+				<th>matrichule</th>
+			
+			
+			</tr>
+			
+			
+		
+		
+		
+		
+		
+		
+		</body>
+		
+		</table>
+	
+	</div>
+	
+	
+	
+	
+</body>
+</html>

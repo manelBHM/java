@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="476" key="x"/>
+		<item value="27" key="y"/>
+		<item value="584" key="height"/>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/raed/Desktop/person/spring-framework-5.1.4.RELEASE"/>
+			<item value="/home/raed/Desktop/udemy/JAVAS/spring-hibernate-source-code-v23/spring-hibernate-source-code-v23/02-spring-mvc-5/solution-code-spring-mvc-controller-level-mappings"/>
+			<item value="/home/raed/eclipse-workspace/darty"/>
+			<item value="/home/raed/eclipse-workspace/magasin"/>
+			<item value="/home/raed/Downloads/darty"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenDependenciesWizardPage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="demo.person"/>
+			<item value="demo.co.simplon"/>
+			<item value="demo.person_list"/>
+			<item value="person.person_list"/>
+			<item value="magazin.magazin2"/>
+			<item value="maven_projet1.maven_test"/>
+			<item value="maven_projet1.com_maven_two"/>
+			<item value="maven_projet1.com_maven_one"/>
+			<item value="com.lesson.one"/>
+			<item value="maven_projet_one.maven_lesson1"/>
+			<item value="maven_projet_one.com_lesson1"/>
+			<item value="maven_projet.raed_maven"/>
+		</list>
+		<list key="groupId">
+			<item value="demo"/>
+			<item value="person"/>
+			<item value="magazin"/>
+			<item value="maven-projet1"/>
+			<item value="maven-projet"/>
+			<item value="maven-projet-one"/>
+		</list>
+		<list key="artifactId">
+			<item value="person"/>
+			<item value="co.simplon"/>
+			<item value="person-list"/>
+			<item value="magazin2"/>
+			<item value="maven-test"/>
+			<item value="com-maven-two"/>
+			<item value="com-maven-one"/>
+			<item value="maven-lesson-one"/>
+			<item value="maven-lesson1"/>
+			<item value="com-lesson1"/>
+			<item value="raed-maven"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

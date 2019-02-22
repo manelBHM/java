@@ -1,0 +1,14 @@
+package com.simp;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class PersonController {
+
+	
+	public String showForm() {
+		
+		
+		return "person-form";
+	}
+}

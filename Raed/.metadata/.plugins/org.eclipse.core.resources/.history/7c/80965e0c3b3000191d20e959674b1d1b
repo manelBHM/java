@@ -1,0 +1,21 @@
+package com.test;
+
+public class Tennis implements Sport {
+
+	
+	private League league;
+	
+	
+	
+	@Override
+	public String dailyWorkOut() {
+		 	return "Winning a tennis match !!";
+	}
+
+	@Override
+	public String getLeague() {
+		
+		return league.getLeague();
+	}
+
+}

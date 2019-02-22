@@ -1,0 +1,104 @@
+package marketControle;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import maven_projet1.mvn_test1.Adomicile;
+import maven_projet1.mvn_test1.Aretirer;
+import maven_projet1.mvn_test1.Bills;
+import maven_projet1.mvn_test1.Customer;
+import maven_projet1.mvn_test1.Delivery;
+import maven_projet1.mvn_test1.Express;
+import maven_projet1.mvn_test1.PointRelais;
+import maven_projet1.mvn_test1.Product;
+
+public class TestServlet extends HttpServlet{
+	
+	
+	Delivery delivery;
+	Product products;
+	Bills bills;
+	Customer customer;
+	
+	
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//super.doGet(req, resp);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		this.getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
+	}
+	
+	
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//super.doPost(req, resp);
+		
+		
+
+		
+		
+		
+		//nama  and address 
+		String fname = req.getParameter("name");
+		String address = req.getParameter("address");
+		//out names and address 
+		req.setAttribute("name", fname);
+		req.setAttribute("address", address);
+		
+		
+		//adding delivery buttons 
+		String city = req.getParameter("city");
+		String deliv = req.getParameter("gridRadios");
+		if("express".equals(deliv)) {
+			delivery = new Express(city);
+		}else if("domicile".equals(deliv)) {
+			delivery = new Adomicile(city);
+		}else if("point".equals(deliv)) {
+			delivery = new PointRelais(city);
+		}else {
+			delivery = new Aretirer(city);
+		}
+		//out livrasion
+		req.setAttribute("city", city);
+		double price = delivery.getPrice();
+		req.setAttribute("price", price);
+		//infor livraison
+ 
+		
+		//list poducts
+		String string = req.getParameter("area");
+		//req.setAttribute("area", string);
+		
+		String[] originalString = string.split("&");
+		
+		String[] pro = new ArrayList<>(); 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		this.getServletContext().getRequestDispatcher("/out.jsp").forward(req, resp);
+	}
+
+}

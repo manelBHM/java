@@ -1,0 +1,11 @@
+package com.example.demo;
+
+public class Stagiaire {
+	
+	private String prenom;
+	private String nom;
+	private String matrichule;
+	
+	
+
+}

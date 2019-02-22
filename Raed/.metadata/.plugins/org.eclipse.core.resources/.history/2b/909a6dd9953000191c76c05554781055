@@ -1,0 +1,19 @@
+package com.promo;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloWorldController {
+	
+	
+	//need a controller to show the initial html form
+	
+	public String showForm() {
+		
+		return "helloworld-form";
+	}
+	
+	
+	//need a controller to process the form
+
+}

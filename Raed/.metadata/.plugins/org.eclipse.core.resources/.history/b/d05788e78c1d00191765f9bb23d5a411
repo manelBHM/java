@@ -1,0 +1,58 @@
+package maven_projet1.pokemon;
+
+
+
+public class Pokemon {
+	
+	private String nom;
+	private int nobreVie;
+	
+	
+	private static int nobrPokemon;
+	public Pokemon(String nom, int nobreVie) {
+		this.nom = nom;
+		this.nobreVie = nobreVie;
+		nobrPokemon++;
+	}
+	
+	public static void nomPks() {
+		System.out.println("il y a : "+nobrPokemon+"Pokemons");
+	}
+	
+	public void affiche() {
+		
+		
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		
+		return "Pokemon [nom=" + nom + ", nobreVie=" + nobreVie + "]";
+	}
+	
+	
+ 
+	
+	public String battle(Pokemon p1, Pokemon p2) {
+		if(p1.nobreVie==p2.nobreVie  ) {
+		  return "je m'appel "+nom+"je suis au meme niveau de "+p2;
+		 
+			
+		}
+		
+		
+		return "";
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

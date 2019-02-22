@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>person form</title>
+</head>
+
+<body>
+	<form action="processForm" modelAttribute="person">
+	
+		First name:<input type="text" path="fisrtName"/>
+		Last name:<input type="text" path="lastName"/>
+				
+				<input type="submit" value="Submit"/>
+	
+	
+	
+	</form>
+
+
+
+</body>
+
+
+
+</html>
