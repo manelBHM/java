@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Satgiare</title>
+</head>
+<body>
+  <h1>List des stagiares</h1>
+    <table border="1" cellpadding="10">
+     <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Matricle</th>
+     </tr>
+     <tr th:each="stagiare : ${stg}">
+      <td th:text="${stagiare.nom}">Nom</td>
+      <td th:text="${stagiare.prenom}">Prenom</td>
+       <td th:text="${stagiare.matricule}">Matricule</td>
+     </tr>
+    </table>
+
+</body>
+</html>
