@@ -1,0 +1,9 @@
+package app8;
+
+public abstract class A {
+
+	abstract void decrire();
+	public String toString() {
+		return "Je suis A";
+	}
+}

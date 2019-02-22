@@ -1,0 +1,10 @@
+package constracteurExp;
+
+public class test {
+
+	public static void main(String[] args) {
+		Exception e = new Exception();
+
+	}
+
+}

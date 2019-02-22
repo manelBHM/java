@@ -1,0 +1,48 @@
+package com.cmpare;
+
+public class Author implements Comparable<Author> {
+
+	String fname;
+	String lname;
+	String bookname;
+	int id;
+	public Author(String fname, String lname, String bookname, int id) {
+		super();
+		this.fname = fname;
+		this.lname = lname;
+		this.bookname = bookname;
+		this.id = id;
+	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	@Override
+	public int compareTo(Author autheur) {
+		if(this.id ==autheur.id) {
+			return 0;
+		}else if(this.id > autheur.id) {
+			return 1;
+		}
+	}
+	
+	public static Comparable<Author> idComparator = new Comparable<Author>() {
+	public int compare(Author a1, Author a2) {
+		int id1 = a1.getId();
+		int id2 = a1.getId();
+		return id1 - id2;
+	
+		
+		
+		}
+
+	@Override
+	public int compareTo(Author arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	};
+	
+
+}

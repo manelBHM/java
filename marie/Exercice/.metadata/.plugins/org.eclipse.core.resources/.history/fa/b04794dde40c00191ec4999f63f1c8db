@@ -1,0 +1,5 @@
+package app8;
+
+public abstract class A {
+
+}

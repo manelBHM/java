@@ -1,0 +1,13 @@
+package compratorHashMap;
+
+import java.util.HashMap;
+
+public class myHashMap {
+
+	public static void main(String[] args) {
+	
+		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
+
+	}
+
+}

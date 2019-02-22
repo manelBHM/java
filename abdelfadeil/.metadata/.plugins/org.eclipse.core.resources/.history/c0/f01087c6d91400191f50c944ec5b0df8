@@ -1,0 +1,24 @@
+package com.compare;
+
+import java.util.*;
+
+public class Stagaire implements Comparator<Stagaire> {
+	String nom;
+	int age, id;
+	
+	public Stagaire(String nom, int age, int id) {
+		super();
+		this.nom = nom;
+		this.age = age;
+		this.id = id;
+	}
+
+	@Override
+	public int compare(Stagaire s1, Stagaire s2) {
+		int age1 = s1.age;
+		return 0;
+	}
+	
+	
+
+}

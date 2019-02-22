@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Cinema {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Quel âge avez vous");
+		
+		
+		
+		int i;
+		if (i<=3) {
+			System.out.println("Le billet est gratuit");
+			
+		}
+		else if(i>3 && i<=60) {
+			System.out.println("Habitez vous à Montreuil?");
+			System.out.println("1 - Oui");
+			System.out.println("2 - Non");
+		}
+		else if(i>60) {
+			System.out.println("Le billet coute 4 euros");
+		}
+		
+		int montreuil;
+		switch(montreuil) {
+		case 1:
+			System.out.println("Le billet coute 5 euros");
+			System.out.println("Le billet coute 8 euros");
+		
+	}
+	}
+}

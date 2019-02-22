@@ -1,0 +1,38 @@
+package app3;
+import java.util.Scanner;
+public class Palindrome {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		 System.out.print("Entrez un mot : ");
+		 public static Scanner sc = new Scanner(System.in);
+	        String mot = sc.nextLine();
+
+
+	        int leftPos = 0;
+	        int rightPos = mot.length() - 1;
+	        boolean palindrome=true;
+	        while ((leftPos < rightPos) && palindrome) {
+	            if (mot.charAt(leftPos) != mot.charAt(rightPos)) {
+	                palindrome=false;
+}
+	            leftPos++;
+	            rightPos--;
+	            System.out.println(mot + mot.reverse);
+}
+	 
+	        if (palindrome) {
+	            System.out.println("C'est un palindrôme !");
+	        } else {
+	            System.out.println("Non, ce n'est pas un palindrôme.");
+	        }
+	}
+	
+
+	public StringBuilder reverse() {
+		return mot;
+	}}
+
+

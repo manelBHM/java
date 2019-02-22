@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+/home/simplonco/Bureau/BilletCinema/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1948430699.index
+1805453240.index
+3936351097.index
+4294325528.index

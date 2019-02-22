@@ -1,0 +1,32 @@
+package app11;
+
+import java.util.Objects;
+
+public class Reel implements IOperation, IAffichage{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	double x;
+	
+	@Override
+	public String affiche() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Objects plus(Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Objects moins(Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

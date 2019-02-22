@@ -1,0 +1,16 @@
+On définit ici deux classes.
+La classe Personne contient :
+un attribut privé de type String nommé nom ;
+un attribut privé de type Personne nommé ami ;
+un constructeur ayant un paramètre de type String servant à initialiser l'attribut nom ;
+un constructeur ayant deux paramètres, un de type String et un de type Personne, servant à initialiser les attribut nom et ami ;
+un accesseur en lecture pour l'attribut ami qui retourne la valeur de cet attribut ;
+un accessseur en écriture pour l'attribut ami qui sert à changer la valeur de cet attribut ;
+une méthode public String toString() qui retourne une chaîne de caractères donnant le nom et le nom de son ami (et si ami vaut null, le fait qu'il n'y a pas d'ami).
+La classe EssaiAmi contient uniquement une méthode main ; cette méthode possède trois variables locales de type Personne, nommée personneSeule, ami1 et ami2 ; elle doit faire en sorte
+que ami1 soit l'ami de ami2 et vice-versa. Les noms de la personne seule et des amis sont donnés par la ligne de commande. On utilisera les instructions System.out.println(personneSeule);
+System.out.println(ami1); et System.out.println(ami2); pour tester la classe Personne
+Un exemple d'exécution
+Suzane n'a pas d'ami
+Marc a pour ami François
+François a pour ami Marc
