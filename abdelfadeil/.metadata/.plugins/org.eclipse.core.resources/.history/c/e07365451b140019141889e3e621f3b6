@@ -1,0 +1,39 @@
+package com.Arraylis;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.TreeSet;
+
+public class myList {
+	
+		
+	public static void main(String[] args) {
+		List<String> colors = new ArrayList<String>();
+		colors.add("\"Red\"");
+		colors.add("\"Green\"");
+		colors.add("\"Orange\"");
+		colors.add("\"White\"");
+		colors.add("\"Black\"");
+		
+		Collections.reverse(colors);
+		System.out.println(colors);
+	
+		Collections.reverse(colors);
+		System.out.println(colors);
+		
+		List<String> colors1 = colors.subList(0, 3);
+		System.out.println(colors1);
+		
+		List<String> colors2 = new ArrayList<String>();
+		colors2.add("\"Red\"");
+		colors2.add("\"Green\"");
+		colors2.add("\"Black\"");
+	
+		colors2.set(3, "\"White\"");
+		colors2.set(3, "\"Pink\"");
+		
+
+	}
+}

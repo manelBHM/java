@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Ajouter entities</title>
+</head>
+<body>
+<h3>Créer un nouveau entities</h3>
+<a th:href="@{http://localhost:8080/liste}">Liste des Stagiaires</a>
+
+<form th:action="@{/ajouter}" method="post">
+<label>Prenom :</label> <input type="text" name="prenom"><br>
+<label>Nom :</label> <input type="text" name="nom"> <br>
+<label>matricule :</label> <input type="text" name="matricule"><br>
+<input type="submit">
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>SpringBoot & Thymleaf (stagiaires )</title>
+</head>
+<body>
+
+
+
+
+	<style>
+table, th, td {
+	border: 1px solid black;
+}
+
+table, h2 {
+	margin: auto;
+	text-align: center;
+}
+</style>
+	<a th:href="@{http://localhost:8080/ajouter}">Ajouter Stagiaire</a>
+
+	<h2>List stagiaires</h2>
+	<table>
+		<tr>
+			<th>Non</th>
+			<th>Prénom</th>
+			<th>Matricul</th>
+		</tr>
+		<tr th:each="s:${liste}">
+			<td th:text="${s.nom}" />
+			<td th:text="${s.prenom}" />
+			<td th:text="${s.matricule}" />
+		</tr>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class EtudiantsArrays {
+
+	public static void main(String[] args) {
+		ArrayList<String> etudiants = new ArrayList<>();
+		etudiants.add("François");
+		etudiants.add("Juliette");
+		etudiants.add("Daniel");
+		etudiants.add("Jack");
+		etudiants.add("Patrick");
+		etudiants.add("Franck");
+		System.out.println(etudiants);
+		
+		
+	}
+
+}

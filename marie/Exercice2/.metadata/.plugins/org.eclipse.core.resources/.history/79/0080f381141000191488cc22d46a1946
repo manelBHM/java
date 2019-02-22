@@ -1,0 +1,12 @@
+package com.inter.project;
+
+import java.util.Objects;
+
+public interface IOperation {
+	
+public Objects plus(Object obj);
+	
+	
+	public Objects moins(Object obj);
+
+}

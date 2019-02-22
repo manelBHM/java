@@ -1,0 +1,27 @@
+package exple3;
+
+public class calcul {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+int a = 6, b = 3;
+
+if(a<b) {
+	
+else(0);
+
+}
+
+else if() {
+}
+
+if(a>b) {
+	
+else(6);
+
+}
+
+	}
+
+}

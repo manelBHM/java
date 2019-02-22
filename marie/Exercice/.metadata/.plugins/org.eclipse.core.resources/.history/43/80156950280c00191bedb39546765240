@@ -1,0 +1,18 @@
+package app7;
+
+public class Tableau {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] tab = {3, -8, 14, 4};
+		tableau(tab);
+		
+	}
+
+	private static void tableau(int[] tab) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

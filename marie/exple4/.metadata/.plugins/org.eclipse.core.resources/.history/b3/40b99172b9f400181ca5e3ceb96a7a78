@@ -1,0 +1,36 @@
+package exple4;
+
+import java.util.Scanner;
+
+public class carte {
+public static void main(String[] arg) {
+		
+		
+		System.out.println("Entrer votre menu");
+		Scanner sc = new Scanner(System.in);
+		int menu = sc.nextInt();
+		int poulet = sc.nextInt();
+		int boeuf = sc.nextInt();
+		int vegetarien = sc.nextInt();
+		
+
+switch (menu) {
+
+case poulet:
+		System.out.println("Vous avez choisie le poulet");
+		break;
+
+case boeuf:
+		System.out.println("Vous avez choisie le boeuf");
+		break;
+		    
+case vegetarien:
+	    System.out.println("Vous avez choisie vegetarien");
+		break;
+		default:
+		System.out.println("Vous n'avez pas fait votre choix");
+}	
+		
+		
+}
+}

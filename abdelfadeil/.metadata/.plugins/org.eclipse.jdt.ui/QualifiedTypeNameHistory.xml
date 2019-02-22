@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="etudiant.Etudiant"/>
+<fullyQualifiedTypeName name="com.segment.segmentDeDroite"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="lesTableaux"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="Personne"/>
+<fullyQualifiedTypeName name="Tableau"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.BAD_OPERATION"/>
+<fullyQualifiedTypeName name="com.projet2.inter.IAffichage"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.projet2.inter.IOperation"/>
+<fullyQualifiedTypeName name="com.projet3.inter.Complex"/>
+<fullyQualifiedTypeName name="com.projet3.inter.Reel"/>
+<fullyQualifiedTypeName name="com.projet3.inter.IOperation"/>
+<fullyQualifiedTypeName name="com.projet.inter.Profil"/>
+<fullyQualifiedTypeName name="com.projet.inter.Personne"/>
+<fullyQualifiedTypeName name="com.projet.inter.Ipersonne"/>
+<fullyQualifiedTypeName name="sun.text.resources.cldr.ext.FormatData_ar_EH"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.projet2.inter.Complex"/>
+<fullyQualifiedTypeName name="com.projet2.inter.Reel"/>
+<fullyQualifiedTypeName name="constracteurExp.Exemple"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.graalvm.compiler.nodes.extended.ForeignCallNode"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="com.compare.Stagiaire"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+</qualifiedTypeNameHistroy>
