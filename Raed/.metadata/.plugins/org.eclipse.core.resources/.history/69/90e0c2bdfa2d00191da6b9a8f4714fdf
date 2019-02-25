@@ -1,0 +1,64 @@
+package spring.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import spring.dao.CustomerDAO;
+import spring.entity.Customer;
+import spring.services.CustomerServices;
+
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+	
+	//we removed this customerDAO bcoz we want inject CustomerService instead as we already removed Transaction to it 
+	//inject customer DAO 
+	//@Autowired
+	//private CustomerDAO customerDAO;
+	
+	@Autowired
+	private CustomerServices customerServices;
+	
+	
+	@GetMapping("/list")
+	public String listCustomer(Model theModel) {
+		//get customer from DAO
+		List<Customer> theCustomers = customerServices.getCustomers();
+		
+		//Add the customer to the model
+		theModel.addAttribute("customers",theCustomers);
+		
+		return "list-customers.jsp";
+	}
+
+	
+	@GetMapping("/showFormForAdd")
+	public String showFormForAdd(Model theModel) {
+		
+		// create model attribute to bind form data
+		Customer theCustomer = new Customer();
+		
+		theModel.addAttribute("customer", theCustomer);
+ 
+		
+		return "customer-form";
+	}
+	
+	@PostMapping("/saveCustomer")
+	public String saveCustomer(@ModelAttribute("customer") Customer theCustomer) {
+		
+		//save the customer usin our services
+		customerServices.saveCustomer(theCustomer);
+		return "redirect:customer/list";
+	}
+	
+	
+
+}

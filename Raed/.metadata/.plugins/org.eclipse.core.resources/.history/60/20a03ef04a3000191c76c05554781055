@@ -1,0 +1,15 @@
+package com.example.demo;
+
+
+@Controller
+public class HelloworldController {
+	
+	
+	@RequestMapping("/")
+	public String showPage() {
+		return "Hello World";
+	}
+	
+	
+
+}

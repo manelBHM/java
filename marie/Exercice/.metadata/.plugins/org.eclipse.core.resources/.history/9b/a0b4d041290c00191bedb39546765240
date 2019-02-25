@@ -1,0 +1,30 @@
+package app7;
+
+import java.util.Arrays;
+
+public class Tableau {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] tab = {3, -8, 14, 4};
+		tableau(tab);
+		
+	}
+
+	static void afficher(int[] tab) {
+		System.out.println(Arrays.toString(tab)+"\n");
+	}
+	
+	static void tableau(int[] tab) {
+		afficher(tab);
+		operation1(tab);
+	}
+	
+	static void operation1(int[] tab) {
+		int nb=9;
+	for(int i=0; i<tab.length; i++) {
+		nb++;
+	}
+	}
+}

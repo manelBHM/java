@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Facture</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+   </head>
+   <body>
+      <h1>FACTURE</h1>
+  
+          
+      <a th:href="@{/magasin}">Magasin</a>  
+      
+      <p>Votre total est de :</p><br>
+      <div th:text="${#httpServletRequest.getParameter('test')}">
+      </div>
+      
+      <div th:text="${#httpServletRequest.getParameter('quant')}">     
+      </div>
+      <div th:text="${#httpServletRequest.getAttribute('multi')}">     
+      </div>
+   </body>
+    
+</html>
+
+

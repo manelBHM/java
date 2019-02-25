@@ -104,7 +104,7 @@ public class Bill implements Delivery{
 	}
 
 
-	public double calcuTotal(Bill b)
+	public double calcuTotal()
 	{
 		double val, key;
 

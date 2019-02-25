@@ -1,0 +1,40 @@
+package exple4;
+
+import java.util.Scanner;
+
+public class Restaurant {
+	public static void main(String[] arg) {
+	
+		
+System.out.println("Choix menu");
+System.out.println("1 - poulet");
+System.out.println("2 - boeuf");
+System.out.println("3 - vegetarien");
+System.out.println("que souhaitez-vouc comme menu?");
+
+
+	Scanner sc = new Scanner(System.in);
+	int nbMenu = sc.nextInt();
+	String menu = sc.nextLine();
+	
+	
+		
+if(nbMenu == 1)	 {
+	System.out.println("vous avez choisi comme menu: poulet!");
+}
+		
+else if(nbMenu == 2) {
+	System.out.println("vous avez choisi comme menu: boeuf!");
+}
+
+else if(nbMenu == 3) {
+	System.out.println("vous avez choisi comme menu: vegetarien!");
+}
+
+else {
+	System.out.println("vous n'avez pas choisi de menu parmi les choix proposés");
+}
+
+	}
+}
+

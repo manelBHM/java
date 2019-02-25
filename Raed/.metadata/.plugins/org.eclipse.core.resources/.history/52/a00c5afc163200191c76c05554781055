@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="__Project_online-library">
+        <property name="context-root" value="__Project_online-library"/>
+    </wb-module>
+</project-modules>

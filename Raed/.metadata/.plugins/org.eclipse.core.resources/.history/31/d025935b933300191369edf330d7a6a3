@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import java.util.List;
+
+public class SaveList implements SaveAndAdd{
+
+	@Override
+	public void save(Stagiaire theStagiaire) {
+		
+		
+	}
+
+	@Override
+	public List<Stagiaire> showList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+
+}

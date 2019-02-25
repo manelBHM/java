@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Magasin</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+</head>
+<body>
+	<h1 class="h1">MEDICAMENTS</h1>
+
+	<br />
+	<br />
+	       <img id="cross" src="https://www.gif-maniac.com/gifs/41/40626.gif">
+	
+
+      
+    	<form action="facture" method="get" class="form">
+		<div class="tab">
+			<table class="highlight" border="1">
+				<tr>
+					<th>Produit</th>
+					<th>Prix</th>
+					<th>Selection</th>
+					<th>Quantité</th>
+				</tr>
+				<tr th:each="medic : ${listeMedic}">
+					<td th:utext="${medic.name}">...</td>
+					<td th:utext="${medic.price}">...</td>
+					<td><input type="checkbox" th:name="${medic.name}" th:value="${medic.price}"></td>
+					<td><input class="input" type="text" placeholder="quantité" th:name="${medic.name}+q"></td>
+					
+				</tr>
+			</table>
+			<input type="text" name="test" placeholder="test">
+			<button id="bouton">Valider</button>
+			
+<!-- 			<a type="button" class="waves-effect waves-light btn-large">ENVOYER SA GRAND MERE</a> -->
+		</div>
+	</form>
+
+
+
+
+
+	<!-- 	<form th:action="@{/magasin}" -->
+	<!--          th:object="${FactureForm}" method="POST"> -->
+	<!--          INT -->
+	<!--          <input type="text" th:field="*{total}" />     -->
+	<!--          <br/>       -->
+	<!--          <input type="submit" value="Create" /> -->
+	<!--       </form> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

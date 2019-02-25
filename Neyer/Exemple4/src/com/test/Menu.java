@@ -22,7 +22,7 @@ public class Menu {
 		String menu = sc.nextLine();// Permet à l'utilisateur de taper une chaine de caractere
 		//pour récuperer le mot : menu.equals(poulet);
 		
-		//Avec des if
+		//********************Avec des if
 		/*if(menu == 1) {
 			
 			System.out.println("Vous avez choisi le menu poulet, merci !");
@@ -39,7 +39,7 @@ public class Menu {
 		*/
 		
 		
-		//Avec le switch
+		//*******************Avec le switch
 		
 		/*switch(menu){
 		
@@ -69,8 +69,32 @@ public class Menu {
 			
 		}*/
 		
-		// Avec des chaines de caracteres
+		//Avec des chaine des caratères et des if 
 		
+		if(menu.equals("Poulet")){
+			
+			System.out.println("Vous avez pris le menu Poulet !");
+			
+		}
+		
+		else if(menu.equals("Boeuf")) {
+			
+			System.out.println("Vous avez pris le menu Boeuf !");
+		}
+				
+		else if(menu.equals("Végétarien")) {
+			
+			System.out.println("Vous evez pris le menu Végétarien ! ");
+		}
+		
+		else {
+			System.out.println("Votre choix n'est pas valide.");
+		}
+		
+		
+		
+		//************* Avec des chaines de caracteres avec switch
+		/*
 		switch(menu) {
 		
 		case "Poulet" : 
@@ -100,6 +124,8 @@ public class Menu {
 			break;
 		
 		}
+		*/
+		
 		
 
 	}

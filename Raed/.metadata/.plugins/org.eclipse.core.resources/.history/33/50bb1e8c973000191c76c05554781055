@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Hello world of Spring </title>
+
+</head>
+
+<body>
+<div id=container>
+	<table>
+		<tr>
+			<th>FirstName</th>
+			<th>LastName</th>
+		</tr>
+		
+		<tr>
+			<td>${param.firstName}</td>
+			<td>${param.lasttName}</td>
+		
+		</tr>
+	
+	</table>
+
+</div>
+
+</body>
+
+
+
+</html>

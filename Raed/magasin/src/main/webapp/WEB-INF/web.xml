@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>magasin</display-name>
+
+  <servlet>
+  	<servlet-name>TestServlet</servlet-name>
+  	<servlet-class>marketControle.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>TestServlet2</display-name>
+  	<servlet-name>TestServlet2</servlet-name>
+  	<servlet-class>marketControle.TestServlet2</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>TestServlet</servlet-name>
+  	<url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestServlet2</servlet-name>
+  	<url-pattern>/TestServlet2</url-pattern>
+  </servlet-mapping>
+
+</web-app>

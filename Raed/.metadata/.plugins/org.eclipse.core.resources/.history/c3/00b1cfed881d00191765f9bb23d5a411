@@ -1,0 +1,27 @@
+package maven_projet1.pokemon;
+
+public class PokemonApp {
+
+	public static void main(String[] args) {
+		
+
+		Pokemon p1 = new Pokemon("Regice",80);
+		Pokemon p2 = new Pokemon("Maganon",75);
+		Pokemon p3 = new Pokemon("Métalosse",80);
+		
+ 
+		battle(p1,p2,p3);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+
+
+}

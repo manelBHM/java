@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="exple4" name="exple4" path="/home/simplonco/Bureau/workspace/exple4/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/exple4" type="j2ee"/>
+</server>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;maven_projet1.products_maven.Produit&apos; to &apos;Product&apos;&#x0A;- Original project: &apos;products-maven&apos;&#x0A;- Original element: &apos;maven_projet1.products_maven.Produit&apos;&#x0A;- Renamed element: &apos;maven_projet1.products_maven.Product&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Produit&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;maven_projet1.products_maven{Produit.java[Produit" matchStrategy="1" name="Product" qualified="false" references="true" similarDeclarations="false" stamp="1548239839915" textual="false" version="1.0"/>
+</session>

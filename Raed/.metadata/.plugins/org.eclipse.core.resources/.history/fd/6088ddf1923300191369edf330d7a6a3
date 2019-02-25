@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import java.util.List;
+
+public interface SaveAndAdd {
+	
+	public void save(Stagiaire theStagiaire);
+	
+	public List<Stagiaire> showList();
+
+}

@@ -1,0 +1,68 @@
+package maven_projet1.com_maven_three;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Test1
+ */
+@WebServlet("/Test1")
+public class Test1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	Test1Class c = new Test1Class("Wile E.Coyote");
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Test1() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+
+ 
+
+		String name = request.getParameter("nom");
+		String message = "parametre trasmis  : ok ! ";
+		
+		 
+		request.setAttribute("nom", message);
+		
+		request.setAttribute("attribute",c.getName());
+	
+		
+	
+		
+		this.getServletContext().getRequestDispatcher("/WebContent/WEB-INF/test1.jsp").forward(request, response);
+		
+	}
+
+	
+	
+	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//doGet(request, response);
+	     
+	
+	 
+		
+		//this.getServletContext().getRequestDispatcher("/test1.jsp").forward(request, response);
+	}
+
+}

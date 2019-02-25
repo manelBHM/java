@@ -1,0 +1,31 @@
+package com.inter.project;
+
+public class Reel extends IAffiche implements IOperation{
+
+	private double re;
+	private double im;
+	
+	public Reel(double re, double im) {
+		this.re = re;
+		this.im = im;
+		
+	}
+	
+	@Override
+	public String affiche() {
+		
+		return null;
+	}
+
+	@Override
+	public Object plus(Object obj) {
+		Reel com = (Reel) obj;
+		return new Reel(this.re + com.re, this.im + com.im);
+	}
+
+	@Override
+	public Object moins(Object obj) {
+		Reel com = (Reel) obj;
+		return new Reel(this.re - com.re, this.im - com.im);
+	}
+}

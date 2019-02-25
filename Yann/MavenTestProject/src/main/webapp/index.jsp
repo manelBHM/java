@@ -75,6 +75,7 @@ transition: .8s ease-in;
  
  <p>
 <% 
+
 String att = (String)request.getAttribute("nom");
 	out.println(att);
 	%>

@@ -1,0 +1,13 @@
+package app11;
+
+import java.util.Objects;
+
+public interface IOperation {
+
+	Objects plus(Object obj);
+	
+	
+	Objects moins(Object obj);
+		
+	
+}

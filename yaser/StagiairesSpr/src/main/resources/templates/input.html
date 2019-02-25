@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+.container{
+display:flex;
+flex-direction: column;
+width: 15%;
+pading:10px;
+
+}
+</style>
+<body>
+<form action="http://localhost:3131/out">
+  <div class="container">
+<h1>Créer un nouveau:</h1>
+
+<br/><br/>
+
+ <label for="nom"><b>Nom</b></label>
+    <input type="text" placeholder="Enter nom" name="nom" id="nom" required>
+    	
+    <label for="prenom"><b>Prenom</b></label>
+    <input type="text" placeholder="Enter prenom" name="prenom" id="prenom" required>
+    
+    <label for="matricule"><b>Matricule</b></label>
+    <input type="text" placeholder="Enter matricule" name="matricule" id="matricule" required>
+<div>
+<button type="submit" class="signupbtn">créer</button>
+</div>
+
+
+ </div>
+</form>
+
+
+
+</body>
+</html>

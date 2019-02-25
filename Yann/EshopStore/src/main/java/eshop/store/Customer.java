@@ -6,13 +6,13 @@ public class Customer {
 	private int postalCode;
 	private static double id;
 	
-	public Customer(String fullName, String address, int postalCode)
+	public Customer(String fullName, String address, int postalcode)
 	{
 		super();
 		
 		this.fullName=fullName;
 		this.address=address;
-		this.postalCode=postalCode;
+		this.postalCode=postalcode;
 		id++;
 	}
 

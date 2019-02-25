@@ -1,0 +1,47 @@
+package maven_projet1.customer_maven;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Bill{
+ 
+
+	private Customer  customer;	
+	private Map<Product, Integer> products = new HashMap<Product, Integer>();
+	
+	
+	
+	public Bill(Customer customer) {
+		super();
+		this.customer = customer;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+ 
+	public Map<Product, Integer> getProducts() {
+		return products;
+	}
+ 
+ 
+	public void addProduct(Product product,Integer quantity) {
+		this.products.put(product, quantity);
+		
+	}
+	
+ 
+	public void generate(Writer r) {
+		
+	}
+	
+	public double getTotal() {
+		
+		return 0;
+	}
+	
+	
+
+ 
+	
+	}
