@@ -44,8 +44,9 @@ th:href="@{css/fontawesome.min.css}"/>
      src="http://www.ipharmd.net/images/medium/tn_bowl_of_hygeia_serpent_red_box_button.png"/>
     </div> 
   </div>
-   
+  
 </header>
+<div class="panel panel-default">
 <div class="container">
 <h4>Pannier client</h4>
 <div th:if="${client}">
@@ -73,13 +74,23 @@ th:href="@{css/fontawesome.min.css}"/>
    </tr>
   </tbody>
 </table>
+<br/>
 
+<h4>Choisissez le mode de livraison</h4>
+  <input type="radio" name="livraison" value="Livré en point retrait"/> 1-Livré en point retrait<br/>
+  <input type="radio" name="livraison" value="Livré chez vous"/> 2-Livré chez vous <br/>
+  <input type="radio" name="livraison" value="Mode 3"/> 3- Mode 3<br/>
+  <input type="radio" name="livraison" value="Mode 4"/> 4-Mode 4<br/>
+  <br/>
+  
        <button th:if="${client}"  type="submit" class="btn mybtn btn-primary btn-lg">passer la comande</button>
  
 </form>
 </div>
 
 </div>
+</div>
+
 <div th:if="${total}" class="container">
 
 <div class="jumbotron">
@@ -90,11 +101,11 @@ th:href="@{css/fontawesome.min.css}"/>
     <ol> <div th:text="${p.designation}"><p th:text="${p.prix}"></p></div></ol>
   </ul>
   <hr class="my-4"/>
+    <div>Mode Livraison:  <p th:text="${livraison}"> </p></div>
   <div>Facture total:  <p th:text="${total}"> </p></div>
   
   <a class="btn btn-primary btn-lg" th:href="@{/user/pannier(id_client=${client.id_client})}" role="button">Revenir au pannier</a>
 </div>
-
 
 </div>
 </div>

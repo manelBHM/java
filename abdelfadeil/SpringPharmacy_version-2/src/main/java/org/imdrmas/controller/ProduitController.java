@@ -310,7 +310,7 @@ public class ProduitController {
 	  }
 	  
 	  @RequestMapping(value="user/commande", method=RequestMethod.POST)
-	  public String passerComande(Model model, @RequestParam(name="id_client") Long id_client) {
+	  public String passerComande(Model model, @RequestParam(name="livraison", required = false) String livraison, @RequestParam(name="id_client", required = false) Long id_client) {
 		  List<ProduitsPannier> produitspan =produitPannierDao.chercherParClient(id_client);
 		  Map<ProduitsPannier, Integer> mapProdP = new HashMap<>();
 		  for(int i=0; i<produitspan.size(); i++) {
@@ -323,7 +323,7 @@ public class ProduitController {
 		  double total =0; for(Map.Entry<ProduitsPannier, Integer> e:
 		  mapProdP.entrySet()) { total += (e.getKey().getPrix()* e.getValue()); }
 		 
-		
+		  model.addAttribute("livraison", livraison);
 		  model.addAttribute("total", total);
 		  model.addAttribute("produitspan", produitspan);
 		  model.addAttribute("client", client);
