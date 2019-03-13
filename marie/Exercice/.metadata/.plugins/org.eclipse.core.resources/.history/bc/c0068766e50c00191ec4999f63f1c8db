@@ -1,0 +1,8 @@
+package app8;
+
+public class C extends A{
+
+	void decrire() {
+		System.out.println(this + "Je suis C la fille de A");
+	}
+}

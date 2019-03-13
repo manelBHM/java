@@ -1,0 +1,29 @@
+package maven_projet1.customer_maven;
+
+import java.util.Map;
+
+public class Bill{
+ 
+
+	private Customer  customer;	
+	private Map<Product, Integer>  product;
+	
+	
+	public Customer getCustomer() {
+		return customer;
+	}
+ 
+	public Map<Product, Integer> getProduct() {
+		return product;
+	}
+ 
+ 
+	
+ 
+	
+	
+	
+
+ 
+	
+	}

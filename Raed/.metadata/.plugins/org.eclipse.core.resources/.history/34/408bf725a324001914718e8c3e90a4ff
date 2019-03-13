@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="10">
+  <list key="modules" value0="com-maven-one::org.eclipse.jst.j2ee.server:com-maven-one::jst.web::2.3" value1="com-maven-two::org.eclipse.jst.j2ee.server:com-maven-two::jst.web::2.3" value2="products-maven::org.eclipse.jst.jee.server:products-maven::jst.web::3.0" value3="maven-cartoon::org.eclipse.jst.jee.server:maven-cartoon::jst.web::3.0" value4="mvn-test1::org.eclipse.jst.jee.server:mvn-test1::jst.web::3.0"/>
+</server>

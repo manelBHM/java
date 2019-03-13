@@ -3,8 +3,7 @@ public class Capital extends Ville{
 	
 	private String nomPays;
 	
-	
-	// Premier Constructeur
+		// Premier Constructeur
 
 	public Capital(String nomVille, int nmbreHabitant, String nomPays)
 	

@@ -18,7 +18,7 @@ public class Personne {
 		return ami;
 	}
 
-	public void setAmi(Personne ami) {//ecrire
+	public void setAmi(Personne ami) {//ecrire //Set s'emploi pour "écrire" n'attribut de la classe. je lui donne un ami
 		this.ami = ami;
 	}
 
@@ -29,7 +29,7 @@ public class Personne {
 		if(ami==null) {
 			reponse =nom+" n'a pas d'amis";
 		}else {
-			reponse = nom +" est l'ami de "+ami.nom;
+			reponse = nom +" est l'ami de "+ami.nom;//je donne le nom de l'ami
 		}
 		
 		return reponse;  

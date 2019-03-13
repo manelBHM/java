@@ -1,0 +1,33 @@
+package exple4;
+
+import java.util.Scanner;
+
+public class Note {
+
+	public static void main(String[] arg) {
+		
+		System.out.println("Entrer une note");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		
+switch ("note") {
+
+case (a<10):
+	System.out.println("doit encore travailler");
+
+case (a>=10 && a<=12):
+    System.out.println("passable");
+
+case (a>=12 && a<=14):
+	System.out.println("asser bien");
+
+case (a>=14 && a<=16):
+	System.out.println("bien");
+
+case (na>=16 && a<=20):
+	System.out.println("très bien");
+}
+		
+		
+}
+}

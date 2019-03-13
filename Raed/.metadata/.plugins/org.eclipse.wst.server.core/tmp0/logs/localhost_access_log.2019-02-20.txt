@@ -1,0 +1,9 @@
+127.0.0.1 - - [20/Feb/2019:09:24:26 +0100] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [20/Feb/2019:09:24:27 +0100] "GET /customer-web-udemqqq/ HTTP/1.1" 302 -
+127.0.0.1 - - [20/Feb/2019:09:24:27 +0100] "GET /customer-web-udemqqq/resources/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Feb/2019:09:24:27 +0100] "GET /customer-web-udemqqq/customer/list HTTP/1.1" 200 8067
+127.0.0.1 - - [20/Feb/2019:09:24:28 +0100] "GET /customer-web-udemqqq/resources/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Feb/2019:09:24:55 +0100] "GET /customer-web-udemqqq/customer/showFormForAdd HTTP/1.1" 200 1387
+127.0.0.1 - - [20/Feb/2019:09:24:55 +0100] "GET /customer-web-udemqqq/resources/css/add-customer-style.css HTTP/1.1" 304 -
+127.0.0.1 - - [20/Feb/2019:09:24:59 +0100] "GET /customer-web-udemqqq/customer/list HTTP/1.1" 200 8067
+127.0.0.1 - - [20/Feb/2019:09:25:01 +0100] "GET /customer-web-udemqqq/customer/showFormForUpdate?customerId=2 HTTP/1.1" 200 1411

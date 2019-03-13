@@ -1,0 +1,13 @@
+package com.example.dbTest;
+
+public class TestDB {
+
+	public static void main(String[] args) {
+ 
+		String user ="pharmacy";
+		String pass = "pharmacy";
+		String url = "jdbc:mysql://localhost:3306/medicine?useSSL=false&serverTimezone=UTC";
+
+	}
+
+}

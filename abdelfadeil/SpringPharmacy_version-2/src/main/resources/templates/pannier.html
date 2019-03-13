@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Accueil</title>
+<link rel="stylesheet" type="text/css" 
+href="../static/css/bootstrap.min.css"
+th:href="@{/css/bootstrap.min.css}"/>
+
+<link rel="stylesheet" type="text/css" 
+href="../static/css/style.css"
+th:href="@{/css/style.css}"/>
+		
+<link rel="stylesheet" type="text/css" 
+href="../static/css/bootstrap.min.css"
+th:href="@{css/bootstrap.min.css}"/>
+
+<link rel="stylesheet" type="text/css" 
+href="../static/css/fontawesome.min.css"
+th:href="@{css/fontawesome.min.css}"/>
+
+</head>
+<body>
+<div class="ecrant">
+<header>
+ <div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+    <li><a th:href="@{/user/accueil}">Accueil</a></li>
+    <li><a th:href="@{/user/accueil}">Chercher</a></li>
+     <li>
+     
+    </li>
+    </ul>
+    
+     <div class="float-right">
+    <ul class="nav navbar-nav">
+     <li>
+     
+     <a th:href="@{/user/pannier}">Pannier</a>
+    </li>
+    <li><a th:href="@{/login}">Logout</a></li>
+    </ul>
+     <img style="width: 40px; height: 40px; float: right; margin-top: 4px;" 
+     src="http://www.ipharmd.net/images/medium/tn_bowl_of_hygeia_serpent_red_box_button.png"/>
+    </div> 
+  </div>
+  
+</header>
+<div class="panel panel-default">
+<div class="container">
+<h4>Pannier client</h4>
+<div th:if="${client}">
+<p>Nom et Prénom : <p th:text="${client.nom }"></p></p>
+</div>
+</div>
+<div class="container">
+<div  id="my-table" class="" style="overflow-x:auto;">
+<form th:if="${client}" th:action="@{/user/commande(id_client=${client.id_client})}" method="post">
+<table>
+  <thead>
+    <tr style="background: aliceblue; color:#0a3d62">
+    <th>ID</th> <th>Désignation</th> <th>Prix</th> <th>Quantité</th><th>Supprimer</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr th:each="p:${produitspan}">
+        <td th:text="${p.id_produit_pannier}"></td>
+        <td th:text="${p.designation}"></td>
+        <td th:text="${p.prix}"></td>
+<!--         <td th:text="${p.quantite}"></td>
+ -->     <td>   <input type="number" th:name="${p.id_produit_pannier}" step="1" th:value="${p.quantite}" min="1" max="100"/></td>
+        <td th:if="${client}"><a th:href="@{/user/supprmier(id=${p.id})}" class="btn btn-secondary">Supprimer</a></td>
+        
+   </tr>
+  </tbody>
+</table>
+<br/>
+
+<h4>Choisissez le mode de livraison</h4>
+  <input type="radio" name="livraison" value="Livré en point retrait"/> 1-Livré en point retrait<br/>
+  <input type="radio" name="livraison" value="Livré chez vous"/> 2-Livré chez vous <br/>
+  <input type="radio" name="livraison" value="Mode 3"/> 3- Mode 3<br/>
+  <input type="radio" name="livraison" value="Mode 4"/> 4-Mode 4<br/>
+  <br/>
+  
+       <button th:if="${client}"  type="submit" class="btn mybtn btn-primary btn-lg">passer la comande</button>
+ 
+</form>
+</div>
+
+</div>
+</div>
+
+<div th:if="${total}" class="container">
+
+<div class="jumbotron">
+  <p class="lead">Nom et prénom</p>
+  <p class="display-4">------------------- FACTURE --------------------</p>
+  <p>------------------- PRODUITS -------------------</p>
+  <ul th:each="p:${produitspan}">
+    <ol> <div th:text="${p.designation}"><p th:text="${p.prix}"></p></div></ol>
+  </ul>
+  <hr class="my-4"/>
+    <div>Mode Livraison:  <p th:text="${livraison}"> </p></div>
+  <div>Facture total:  <p th:text="${total}"> </p></div>
+  
+  <a class="btn btn-primary btn-lg" th:href="@{/user/pannier(id_client=${client.id_client})}" role="button">Revenir au pannier</a>
+</div>
+
+</div>
+</div>
+<footer id="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+        <div class="icon-bar"> 
+          <a href="#"><img style="width: 28px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbGLGfSzIgK3OzV9CY4zexkkcG9ZmfbM1aGTGGBzntYnoimXyq"/> </a> 
+          <a href="#"><img alt="" src="https://www.annuairehildegarde.com/images/orange-facebook-icon.png"/> </a> 
+          <a href="#"><img alt="" src="http://www.logospng.com/images/48/twitterda-en-komik-s-246zler-187-android-apk-indir-instagram-48442.png"/> </a>
+          <a href="#"><img style="width: 31px;" src="http://thebrowniebar.co.uk/resources/Social%20Media%20icons_Instagram_Orange.png?timestamp=1429723346240"/> </a> 
+        </div>
+    </div>
+    <div class="col-lg-4">
+    <small>All Copyright Reserve 2018</small>
+    </div>
+    <div class="col-lg-4">
+<img src="https://cdn.newpharma.net/images/campaigns/physiomer/desktop-page-top-banner/fr_fr/01.png" alt="Nature" class="responsive" width="600" height="400"/>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+
+
+</body>
+</html>

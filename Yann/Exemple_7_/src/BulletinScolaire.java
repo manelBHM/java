@@ -1,3 +1,4 @@
+
 public class BulletinScolaire {
 
 	public static void main(String[] args) {

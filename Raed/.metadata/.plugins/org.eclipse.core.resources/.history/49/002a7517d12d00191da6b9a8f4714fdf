@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>  
+	<link type="text/css"
+		rel="stylesheet"
+			href="${PageContext.request.contextPath}/resources/css/style.css">
+			
+	<link type="text/css"
+		rel="stylesheet"
+			href="${PageContext.request.contextPath}/resources/css/add-customer-style.css">
+</title>
+</head>
+
+<body>
+
+<p> customer form </p>
+
+
+
+ 
+
+</body>
+</html>

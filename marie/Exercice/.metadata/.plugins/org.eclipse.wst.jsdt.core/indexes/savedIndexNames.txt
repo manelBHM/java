@@ -1,0 +1,14 @@
+INDEX VERSION 1.4+/home/simplonco/Bureau/Exercice/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1441101462.index
+1548958397.index
+3258429214.index
+3039862664.index
+726927915.index
+259116495.index
+614136620.index
+741985842.index
+3311037191.index
+3292922045.index
+1402540216.index
+2992462737.index
+3872980612.index

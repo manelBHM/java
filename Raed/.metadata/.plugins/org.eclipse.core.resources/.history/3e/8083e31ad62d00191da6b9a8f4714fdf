@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>  
+	<link type="text/css"
+		rel="stylesheet"
+			href="${PageContext.request.contextPath}/resources/css/style.css">
+			
+	<link type="text/css"
+		rel="stylesheet"
+			href="${PageContext.request.contextPath}/resources/css/add-customer-style.css">
+</title>
+</head>
+
+<body>
+ 
+	<div id="wrapper">
+		<div id="header">
+			<h2>CRM - Customer Relational Manager</h2>
+		
+		</div>
+	
+	
+	</div>
+
+
+
+ 
+
+</body>
+</html>

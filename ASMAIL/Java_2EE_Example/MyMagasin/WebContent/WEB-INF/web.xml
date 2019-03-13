@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>MyMagasin</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>main.Test</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/Test</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteProduct</servlet-name>
+		<servlet-class>controllerProduct.DeleteProduct</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteProduct</servlet-name>
+		<url-pattern>/DeleteProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DisplayProduct</servlet-name>
+		<servlet-class>controllerProduct.DisplayProduct</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DisplayProduct</servlet-name>
+		<url-pattern>/DisplayProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>controllerProduct.HomeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/HomeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SaveProduct</servlet-name>
+		<servlet-class>controllerProduct.SaveProduct</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SaveProduct</servlet-name>
+		<url-pattern>/SaveProduct</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateProduct</servlet-name>
+		<servlet-class>controllerProduct.UpdateProduct</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateProduct</servlet-name>
+		<url-pattern>/UpdateProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateProduct2</servlet-name>
+		<servlet-class>controllerProduct.UpdateProduct2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateProduct2</servlet-name>
+		<url-pattern>/UpdateProduct2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginUser</servlet-name>
+		<servlet-class>controllerUser.LoginUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginUser</servlet-name>
+		<url-pattern>/LoginUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProfileUser</servlet-name>
+		<servlet-class>controllerUser.ProfileUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ProfileUser</servlet-name>
+		<url-pattern>/ProfileUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterUser</servlet-name>
+		<servlet-class>controllerUser.RegisterUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterUser</servlet-name>
+		<url-pattern>/RegisterUser</url-pattern>
+	</servlet-mapping>
+</web-app>

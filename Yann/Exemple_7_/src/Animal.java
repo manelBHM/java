@@ -13,6 +13,8 @@
 		this.nom=nom;
 	}
 	
+
+	
 	
 	
 	public String manger()
@@ -46,10 +48,10 @@
 	
 	
 	
-	public void nom()
+	public void getNom()
 	{
 		
-		System.out.println("nom: " + nom);
+		System.out.println("Nom: " + nom);
 	}
 	
 	
@@ -59,7 +61,13 @@
 		System.out.println("Je suis un Animal de type " + nom +  " de la ==> " + this.getClass() +  " je suis de couleur " + this.couleur + " je pèse " + this.poids + " kg"  + " je " + manger() + " et je " +  boire());
 	}
 	
+	
+	
+	
+	
 	 protected abstract void deplacement();
+	 
+	 
 	 protected abstract void crie();
 	
 	
@@ -67,7 +75,9 @@
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+	
+		
 	}
 
 }

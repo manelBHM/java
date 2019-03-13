@@ -1,0 +1,48 @@
+package exple4;
+
+import java.util.Scanner;
+
+public class Restaurant {
+
+	public static void main(String[] arg) {
+		
+		
+		System.out.println("Entrer votre menu");
+		Scanner sc = new Scanner(System.in);
+		int menu, poulet, boeuf, vegetarien = sc.nextInt();
+	
+if(poulet) {
+	System.out.println("Vous avez choisie le poulet");
+}
+else if(boeuf) {
+	System.out.println("Vous avez choisie le boeuf");
+}
+
+else if(vegetarien) {
+	System.out.println("Vous avez choisie vegetarien");
+}
+else {
+	System.out.println("Vous n'avez pas fait votre choix");
+}
+
+
+
+
+
+switch (menu) {
+case poulet:
+	System.out.println("Vous avez choisie le poulet");
+	break;
+
+case boeuf:
+    System.out.println("Vous avez choisie le boeuf");
+    break;
+    
+case vegetarien:
+	System.out.println("Vous avez choisie vegetarien");
+	break;
+	default:
+	System.out.println("Vous n'avez pas fait votre choix");
+}
+	}
+}

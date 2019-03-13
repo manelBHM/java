@@ -19,24 +19,23 @@ public class Loup extends Animal {
 	
 	protected void crie() 
 	{
-		
-		System.out.println("Crie: Grogne");
-		
+		System.out.println("Crie: Grognement");
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-	Animal loup = new Loup (19, "gris blanc", "loup");
+	Animal loup = new Loup (19, "blanche", "loup");
 		
-	loup.nom();
+	System.out.println("--------------------------------------------------- Déscription ------------------------------------------------\n");
+	loup.getNom();
 	loup.poids();
 	loup.couleur();
 	loup.crie();
 	loup.deplacement();
-	System.out.println("\n****************************************************** Présentation ********************************************");
+	System.out.println("\n--------------------------------------------------- Présentation ------------------------------------------------\n");
 	loup.presentation(); 
-	
+ 
 
 	}
 

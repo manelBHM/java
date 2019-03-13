@@ -1,0 +1,41 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Hello world of Spring </title>
+
+</head>
+
+<body>
+<div id=container>
+	<table>
+		<tbody>
+		<tr>
+			<th>FirstName</th>
+			<th>LastName</th>
+		</tr>
+		
+		<tr>
+			<td>${person.firstName}</td>
+			<td>${person.lastName}</td>
+		
+		</tr>
+			</tbody>
+	
+	</table>
+	<br>
+	Your Country is : ${person.country}
+		<br>
+	Your favariteLanguage is : ${person.favariteLanguage}
+			<br>
+	Your operatying system is : ${person.operatyingSystem}
+
+</div>
+
+</body>
+
+
+
+</html>

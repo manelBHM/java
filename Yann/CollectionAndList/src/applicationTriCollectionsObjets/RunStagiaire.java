@@ -15,9 +15,9 @@ public class RunStagiaire {
 	    List <Stagiaire> stagiaireList = new ArrayList<Stagiaire>();
 		
 	    stagiaireList.add(new Stagiaire(1, "Curtis Jackson", 45));
-	    stagiaireList.add(new Stagiaire(2, "Cacius Clay", 70));
 	    stagiaireList.add(new Stagiaire(3, "Luther King jr", 120));
 	    stagiaireList.add(new Stagiaire(4, "Nelson Mandela", 90));
+	    stagiaireList.add(new Stagiaire(2, "Cacius Clay", 70));
 	    stagiaireList.add(new Stagiaire(5, "Didier Drogba", 39));
 	    stagiaireList.add(new Stagiaire(1, "test id one", 122));
 	    stagiaireList.add(new Stagiaire(2, "test id two", 18));

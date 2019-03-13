@@ -1,0 +1,42 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>person form</title>
+</head>
+
+<body>
+ 
+	
+<form:form action="processForm" modelAttribute="person">
+	
+		First name: <form:input path="firstName" />
+		
+		<br><br>
+	
+		Last name: <form:input path="lastName" />
+		
+		<br><br>
+	
+		Country:
+		<form:select path="country">
+			<form:option value="Sudan" lable="Sudan"/>
+			<form:option value="Germany" lable="Germany"/>
+			<form:option value="Tchat" lable="Tchat"/>
+		
+		</form:select>
+		
+		<input type="submit" value="Submit" />
+	
+	</form:form>
+ 
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>PharmacieServlet</servlet-name>
+  	<display-name>PharmacieServlet</display-name>
+  	<description></description>
+  	<servlet-class>co.simplon.PharmacieServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>shoppingCart</servlet-name>
+  	<display-name>shoppingCart</display-name>
+  	<description></description>
+  	<servlet-class>co.simplon.shoppingCart</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>shoppinCartController</servlet-name>
+  	<display-name>shoppinCartController</display-name>
+  	<description></description>
+  	<servlet-class>co.simplon.shoppinCartController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ShoppingCart</servlet-name>
+  	<display-name>ShoppingCart</display-name>
+  	<description></description>
+  	<servlet-class>co.simplon.ShoppingCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PharmacieServlet</servlet-name>
+  	<url-pattern>/PharmacieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>shoppingCart</servlet-name>
+  	<url-pattern>/shoppingCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>shoppinCartController</servlet-name>
+  	<url-pattern>/shoppinCartController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShoppingCart</servlet-name>
+  	<url-pattern>/ShoppingCart</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,38 @@
+package app11;
+
+import java.util.Objects;
+
+public class Complexe extends IAffichage implements IOperation{
+
+	double im;
+	double re;
+	
+	public Complexe(double im, double re) {
+		this.im = im;
+		this.re = re;
+	}
+	
+	@Override
+	public String affiche() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Objects plus(Object obj) {
+		Complexe com = (Complexe) obj;
+		return new Complexe(this.im + com.im, this.re + com.re);
+		
+		/*int C1 = 2+2;
+		int C2 = -3+4;
+		int C3 = (C1.plus(C2)obj);
+		return null;*/
+	}
+
+	@Override
+	public Objects moins(Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

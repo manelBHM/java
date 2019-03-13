@@ -1,0 +1,5 @@
+package app11;
+
+public interface IAffichage {
+
+}

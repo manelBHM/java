@@ -1,0 +1,47 @@
+package com.test;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Tennis implements Sport {
+
+	
+	private Europe europe;
+	
+	public Tennis() {
+		
+	}
+	
+	
+	
+	
+	
+	
+	public void setEurope(Europe europe) {
+		this.europe = europe;
+	}
+
+
+
+
+
+
+	public Tennis(Europe europe) {
+		this.europe = europe;
+	}
+
+
+
+
+	@Override
+	public String dailyWorkOut() {
+		 	return "Winning a tennis match !!";
+	}
+
+	@Override
+	public String getLeague() {
+		
+		return europe.getLeague();
+	}
+
+}

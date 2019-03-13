@@ -13,9 +13,10 @@ public class VerifBool {
 					
 				int c= sc.nextInt();
 				
-				if(c>0) {System.out.println("Ma Variable c est Positif");}
-				else if(c<0) {System.out.println("Ma Variable c est Négatif");}
-				else {System.out.println("Ma Variable est null");}
+				if(c>0) {System.out.println("Le nombre saisir est Positif");}
+				else if(c<0) {System.out.println("Le nombre saisir  est Négatif");}
+				else {System.out.println("Le nombre saisir est null");}
+			
 	}
 
 }

@@ -1,0 +1,47 @@
+package maven_projet1.mvn_test1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Bills {
+	
+	private Customer customer;
+	private Map<Product, Integer> products = new HashMap<Product,Integer>();
+	
+	public Bills(Customer customer) {
+		super();
+		this.customer = customer;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Map<Product, Integer> getProducts() {
+		return products;
+	}
+
+	public void setProducts(Map<Product, Integer> products) {
+		this.products = products;
+	}
+	
+	//adding products 
+	public void addProducts(Product product,Integer quantity) {
+		this.products.put(product, quantity);
+	}
+	
+	//showing products 
+	public void show( Map<Product, Integer> prod){
+		for(Map.Entry<Product, Integer> elements:products.entrySet()) {
+			System.out.println(elements.getKey()+":"+elements.getValue());
+		}
+		System.out.println("");
+	}
+	
+	
+
+}

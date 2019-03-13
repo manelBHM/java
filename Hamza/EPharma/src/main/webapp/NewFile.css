@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+background-color : #DAF0C9;
+
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+	
+	padding-top: 0!important;
+	border-style:solid;
+	border-color: grey;
+	
+}
+.container{
+
+	text-align:center;
+	
+}
+
+
+.card-img-top{
+	width:350px;
+	
+}
+
+.tony{
+	background-color:black;
+}
+
+.card-deck{
+	padding-top:20px!important;
+}
+
+
+.connexion{
+	
+	padding-top:40px;
+}
+
+
+
+.nav{
+	background:black;
+}
+
+
+
+

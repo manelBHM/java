@@ -10,6 +10,8 @@ public class run {
 		Personne employe = new Personne("Duroc","Paul",new Date(12,12,1992),12);//in pourra instansier Profil directement dans le Sysout
 
 		employe.affiche();
+		
+		
 	}
 
 }

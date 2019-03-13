@@ -1,0 +1,21 @@
+package maven_projet1.pokemon;
+
+
+
+public class Pokemon {
+	
+	private String nom;
+	private int nobreVie;
+	private static int nobrPokemon;
+	
+	
+ 
+	}
+	
+	
+	
+	
+	
+	
+
+}

@@ -29,12 +29,13 @@ public class Lion extends Animal {
 		
 		Animal lion = new Lion (24, "jaune or", "lion");
 		
-		lion.nom();
+		System.out.println("--------------------------------------------------- Déscription ------------------------------------------------\n");
+		lion.getNom();
 		lion.poids();
 		lion.couleur();
 		lion.crie();
 		lion.deplacement();
-		System.out.println("\n****************************************************** Présentation ********************************************");
+		System.out.println("\n--------------------------------------------------- Présentation ------------------------------------------------\n");
 		lion.presentation(); 
 
 	}

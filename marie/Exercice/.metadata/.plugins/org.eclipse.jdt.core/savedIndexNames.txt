@@ -1,0 +1,25 @@
+INDEX VERSION 1.131+/home/simplonco/Bureau/Exercice/.metadata/.plugins/org.eclipse.jdt.core
+2332532317.index
+726927915.index
+1465223811.index
+1441101462.index
+3039862664.index
+1121337426.index
+781403200.index
+3311037191.index
+348790300.index
+116835714.index
+253934951.index
+741985842.index
+3258429214.index
+1465797698.index
+2992462737.index
+2810763480.index
+857866426.index
+2231050147.index
+4054468696.index
+3782327871.index
+10658915.index
+2646788735.index
+1548958397.index
+2958141166.index

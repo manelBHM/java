@@ -1,0 +1,19 @@
+package exple9;
+import java.util.Scanner;
+public class Restaurant {
+
+	public  Static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Accompagnement();
+		
+	}
+
+	public void Accompagnement() {
+		System.out.println("Que voulez vous comme accompagnement");
+		System.out.println("1 - Legumes frais");
+		System.out.println("2 - Frites");
+		System.out.println("3 - Riz");
+		
+	}
+}

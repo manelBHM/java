@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpringPharmacy
+Bundle-SymbolicName: SpringPharmacy
+Bundle-Version: 1.0.0.qualifier
+Export-Package: org.imdrmas,
+ org.imdrmas.controller,
+ org.imdrmas.dao,
+ org.imdrmas.entities,
+ org.imdrmas.security,
+ org.imdrmas.service,
+ org.imdrmas.users,
+ org.imdrmas.vente

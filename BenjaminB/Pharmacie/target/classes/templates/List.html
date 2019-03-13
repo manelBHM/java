@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8" />
+      <title>meds List</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+   </head>
+   <body>
+      <h1>items List</h1>
+      <a href="additem">Add item</a>
+      <br/><br/>
+      <div>
+        <form th:action="${addToList}"
+         th:object="${itemsList}" method="POST">
+         <table border="1">
+            <tr>
+               <th>Shop list</th>
+               <th>******</th>
+            </tr>
+            <tr th:each ="items : ${meds}">
+               <td th:utext="${meds.Name}">...</td>
+               <td th:utext="${meds.description}">...</td>
+               <td th:utext="${meds.price}">...</td>
+               <td th:utext="${meds.qtity}">...</td>
+               <div>
+               <input type="submit" value="addToList" />
+               </div>
+            </tr>
+
+         </table>
+         </form>
+                  <table border="1">
+            <tr>
+               <th>Client List</th>
+               <th>******</th>
+            </tr>
+            <tr th:each ="itemsList : ${meds}">
+               <td th:utext="${medsList.Name}">...</td>
+               <td th:utext="${medsList.description}">...</td>
+               <td th:utext="${medsList.price}">...</td>
+               <td th:utext="${medsList.qtity}">...</td>
+            </tr>
+         </table>
+         <div>      <a th:href="@{/Facture}">menu</a>  </div>
+      </div>
+   </body>
+</html>

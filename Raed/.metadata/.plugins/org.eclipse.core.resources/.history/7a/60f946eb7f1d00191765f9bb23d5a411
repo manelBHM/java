@@ -1,0 +1,29 @@
+package maven_projet1.pokemon;
+
+
+
+public class Pokemon {
+	
+	private String nom;
+	private int nobreVie;
+	
+	
+	private static int nobrPokemon;
+	public Pokemon(String nom, int nobreVie) {
+		this.nom = nom;
+		this.nobreVie = nobreVie;
+		nobrPokemon++;
+	}
+	
+	
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
