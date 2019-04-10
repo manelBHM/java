@@ -70,9 +70,11 @@ public class ProduitController {
 	  Page<Produits> pageProduits = produitRepository.chercher("%" + mc + "%", new
 	  PageRequest(p, s));
 	  
-	  model.addAttribute("listProduits", pageProduits.getContent()); int[] pages =
-	  new int[pageProduits.getTotalPages()]; model.addAttribute("pages", pages);
-	  model.addAttribute("size", s); model.addAttribute("pageCourante", p);
+	  model.addAttribute("listProduits", pageProduits.getContent()); 
+	  int[] pages = new int[pageProduits.getTotalPages()]; 
+	  model.addAttribute("pages", pages);
+	  model.addAttribute("size", s);
+	  model.addAttribute("pageCourante", p);
 	  model.addAttribute("mc", mc); 
 	  List<ProduitsPannier> produitspan =produitPannierDao.findAll();
 		model.addAttribute("produitspan", produitspan);

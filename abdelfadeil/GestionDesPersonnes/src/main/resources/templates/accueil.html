@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html   xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorator="layout">
+<head>
+<meta charset="UTF-8"/>
+    <link rel="stylesheet" th:href="@{https://use.fontawesome.com/releases/v5.7.2/css/all.css}" th:integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <link th:href="@{https://fonts.googleapis.com/css?family=EB+Garamond|Indie+Flower|Lobster|Lora|Markazi+Text|Overpass|Pacifico|Raleway|Source+Sans+Pro|Srisakdi}" rel="stylesheet"/>
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{css/style.css}"/>
+<title>Gestion de personnes</title>
+</head>
+<body>
+
+<section layout:fragment="content" style="width:80%;margin:auto;margin-top:20px;">
+<div>
+<form class="form-inline my-2 my-lg-0" action="/accueil" method="get">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="mc" th:value="${mc}"/>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+ </div>
+ <h4 class="spacer" style="margin: 15px 0 ;">Liste des personnes</h4>
+<div class="">
+
+ 
+
+ 
+ <div id="my-table" class="" style="overflow-x:auto;">
+<table class="table table-bordered">
+  <thead>
+    <tr style="background: aliceblue; color:#0a3d62">
+    <th>ID</th><th>Nom</th><th>Prénom</th> <th>Date de nissance</th><th>Marié</th> <th>nombre d'enfants</th> <th>Version</th><th></th><th></th>
+    </tr>
+    
+  </thead>
+  <tbody>  
+	
+   <tr th:each="p:${listPersonnes}">
+   
+        <td th:text="${p.id}"></td>
+        
+        <td th:text="${p.nom}"></td>
+        
+        <td th:text="${p.prenom}"></td>
+        <td th:text="${p.dateNaissance}"></td>
+        
+        <td th:text="${p.marie}"></td>
+        
+        <td th:text="${p.nbEnfants}"></td>
+        
+        <td th:text="${p.version}"></td>
+        
+        <td><a th:href="@{/edider(id=${p.id})}" class="btn btn-outline-primary">Editer</a></td>
+        <td><a onClick="return confirm('Etes vous Sûre?')" th:href="@{/supprimer(id=${p.id},)}" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a></td>
+   </tr>
+  </tbody>
+</table>
+</div>
+<div class="">
+ <ul class="nav nav-pills">
+    <li th:class="${pageCourante}==${status.index}?'active page-item':''" th:each="p,status:${pages}"> <a th:href="@{/accueil(page=${status.index},size=${size},mc=${mc})}" class="page-link" th:text="${status.index}"></a> </li>
+ </ul>
+
+</div>
+ 
+</div>
+  </section>
+
+
+
+
+
+ <script
+		th:src="@{./js/jquery-3.3.1.min.js}"></script>
+    <script
+		th:src="@{./js/bootstrap.min.js}"></script>
+</body>
+</html>
